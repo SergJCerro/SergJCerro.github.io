@@ -1,6 +1,6 @@
 let date = new Date();
 
-function writedate() {
+function todaydate() {
     let hour = date.getHours();
     var hourText = hour ;
     var timeOfDay = 'AM';
