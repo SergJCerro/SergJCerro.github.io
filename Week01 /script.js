@@ -2,7 +2,7 @@ let date = new Date();
 
 function writedate() {
     let hour = date.getHours();
-    var hourText = hour;
+    var hourText = hour ;
     var timeOfDay = 'AM';
     if (hour > 12) {
         hourText = hour - 12;
