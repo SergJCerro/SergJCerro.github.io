@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
+
+html {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+}
+.header {
+    text-align: center;
+    background-color: deepskyblue;
+    border: 2px solid cyan;
+    padding: 2px;
+    border-radius: 25px;
+}
+main{
+    text-align: center;
+}
+main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+section{
+    float:left;
+    width: 29.6%;
+    padding: 20px;
+    background-color: 	#0000CD;
+    border: solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+h2,h3,p{
+    color: hsla(200,0%,0%,.7);
+}
+footer {
+    text-align: center;
+    background-color: deepskyblue;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    padding: 1px;
+}
+a{
+    color:hsla(200,0%,0%,.7);
+}
+
+.outer {
+    text-align: center;
+    line-height: 0.7;
+}
+
+.up {
+    font-size: 15px;
+}
+
+.date {
+    color: hsla(200, 0%, 0%, .7);
+}
