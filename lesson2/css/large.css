@@ -47,8 +47,8 @@ footer a{
 }
 .responsive{
     max-width: 23em;
-    width: auto;
-    height: 11.25em;
+    width: 100%;
+    height: auto;
     padding: 0.625em;
 }
 
