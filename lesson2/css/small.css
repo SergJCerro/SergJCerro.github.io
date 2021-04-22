@@ -2,6 +2,9 @@
     h1{
         font-size: 0.9375em;
     }
+    p{
+        font-size: ;
+    }
     main{
         grid-template-columns:  1fr;
     }
