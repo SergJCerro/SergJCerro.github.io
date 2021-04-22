@@ -20,5 +20,8 @@
     main{
         grid-template-columns: 1fr 1fr;
     }
+    .responsive{
+        padding: 0.625em;
+    }
     
 }
