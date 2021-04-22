@@ -75,12 +75,12 @@ a{
     }
 
     p {
-        font-size: 0.2em;
+        font-size: 0.1em;
     }
 
     .responsive {
         margin-top: 2.7em;
-        max-width: 8.7em;
+        max-width: 7.1em;
         width: 100%;
         height: auto;
     }
