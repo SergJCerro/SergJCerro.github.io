@@ -1,4 +1,22 @@
 @media screen and (max-width: 48em){
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2.6em;
+    }
+    .long{
+        font-size: 2.2em;
+    } 
+    h3{
+        font-size: 2.2em;
+    }
+    section a {
+        font-size: 2em;
+    }
+   section p{
+        font-size:1.8em;
+    }
     main{
         grid-template-columns: 1fr 1fr;
     }

@@ -10,45 +10,46 @@ body {
 }
 
 .Name {
-    padding-left: 50px;
+    padding-left: 3.125em;
 }
 
 .main {
-    max-width: 500px;
+    max-width: 31.25em;
     width: 100%;
     height: auto;
     background-color: floralwhite;
-    border-radius: 25px;
+    border-radius: 1.5625em;
 }
 
 .header {
 
     background-color: deepskyblue;
-    border: 2px solid cyan;
-    padding: 2px;
-    border-radius: 25px;
+    border: 0.125em solid cyan;
+    padding: 0.125em;
+    border-radius: 1.5625em;
 }
 
 .responsive {
     float: right;
-    margin-top: -60px;
-    max-width: 150px;
+    margin-top: -3em;
+    margin-right:0.2em ;
+    max-width: 9.375em;
     width: 100%;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.9375em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
 }
 
 .classes {
-    padding: 10px;
+    padding: 0.625em;
 }
 
 footer {
     text-align: center;
     background-color: deepskyblue;
-    border: 2px solid cyan;
-    border-radius: 20px;
-    padding: 1px;
+    border: 0.125em solid cyan;
+    border-radius: 1.25em;
+    padding: 0.0625em;
 }
 a{
     color:hsla(200,0%,0%,.7);
@@ -60,36 +61,36 @@ a{
 }
 
 .up {
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .date {
     color: hsla(200, 0%, 0%, .7);
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
     h1 {
-        font-size: 20px;
+        font-size: 1.25em;
     }
 
     p {
-        font-size: 4px;
+        font-size: 0.25em;
     }
 
     .responsive {
-        margin-top: -40px;
-        max-width: 140px;
+        margin-bottom: 2.5em;
+        max-width: 8.75em;
         width: 100%;
         height: auto;
     }
 
     .main {
-        max-width: 400px;
+        max-width: 25em;
         width: 100%;
         height: auto;
         background-color: floralwhite;
-        border-radius: 25px;
+        border-radius: 1.5625em;
     }
 
 }
