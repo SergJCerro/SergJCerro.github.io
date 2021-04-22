@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
-
+* {
+    box-sizing: border-box;
+  }
 html {
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -17,21 +19,16 @@ body {
 }
 main{
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
-main:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-section{
-    float:left;
-    width: 29.6%;
-    padding: 20px;
-    background-color: 	#0000CD;
-    border: solid black;
-    border-radius: 10px;
+section {
+    background-color: #FFF5EE;
+    border-radius: 15px;
     text-align: center;
-}
+    margin: 10px;
+  }
 h2,h3,p{
     color: hsla(200,0%,0%,.7);
 }
@@ -44,6 +41,10 @@ footer {
 }
 a{
     color:hsla(200,0%,0%,.7);
+}
+.resposnive{
+    width: 100%;
+    height: auto;
 }
 
 .outer {
