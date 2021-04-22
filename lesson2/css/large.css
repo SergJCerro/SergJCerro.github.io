@@ -13,21 +13,21 @@ body {
 .header {
     text-align: center;
     background-color: deepskyblue;
-    border: 2px solid cyan;
-    padding: 2px;
-    border-radius: 25px;
+    border: 0.125em solid cyan;
+    padding: 0.125em;
+    border-radius: 1.5625em;
 }
 main{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 0.625em;
 }
 section {
     background-color: #FFF5EE;
-    border-radius: 15px;
+    border-radius: 0.9375em;
     text-align: center;
-    margin: 10px;
+    margin: 0.625em;
   }
 h2,h3,p{
     color: hsla(200,0%,0%,.7);
@@ -35,14 +35,15 @@ h2,h3,p{
 footer {
     text-align: center;
     background-color: deepskyblue;
-    border: 2px solid cyan;
-    border-radius: 20px;
-    padding: 1px;
+    border: 0.125em solid cyan;
+    border-radius: 1.25em;
+    padding: 0.0625em;
 }
 a{
     color:hsla(200,0%,0%,.7);
 }
-.resposnive{
+.responsive{
+    max-width: 12.5em;
     width: 100%;
     height: auto;
 }
@@ -53,7 +54,7 @@ a{
 }
 
 .up {
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .date {
