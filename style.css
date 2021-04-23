@@ -13,7 +13,7 @@ body {
     padding-left: 3.125em;
 }
 
-.main {
+main {
     max-width: 31.25em;
     width: 100%;
     height: auto;
@@ -21,7 +21,7 @@ body {
     border-radius: 1.5625em;
 }
 
-.header {
+header {
 
     background-color: deepskyblue;
     border: 0.125em solid cyan;
@@ -85,7 +85,7 @@ a{
         height: auto;
     }
 
-    .main {
+    main {
         max-width: 25em;
         width: 100%;
         height: auto;
