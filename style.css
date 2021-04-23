@@ -12,7 +12,7 @@ body {
     padding-left: 3.125em;
 }
 
-main {
+main{
     max-width: 31.25em;
     width: 100%;
     height: auto;
@@ -20,7 +20,7 @@ main {
     border-radius: 1.5625em;
 }
 
-header {
+header{
     background-color: deepskyblue;
     border: 0.125em solid cyan;
     padding: 0.125em;
