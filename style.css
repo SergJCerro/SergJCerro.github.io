@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
-
 html {
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -22,7 +21,6 @@ main {
 }
 
 header {
-
     background-color: deepskyblue;
     border: 0.125em solid cyan;
     padding: 0.125em;
@@ -32,7 +30,7 @@ header {
 .responsive {
     float: right;
     margin-top: 2.6em;
-    margin-right:0.2em ;
+    margin-right: 0.2em;
     max-width: 9.375em;
     width: 100%;
     height: auto;
@@ -51,8 +49,9 @@ footer {
     border-radius: 1.25em;
     padding: 0.0625em;
 }
-a{
-    color:hsla(200,0%,0%,.7);
+
+a {
+    color: hsla(200, 0%, 0%, .7);
 }
 
 .outer {
@@ -73,18 +72,15 @@ a{
     h1 {
         font-size: 1.25em;
     }
-
     p {
         font-size: 0.1em;
     }
-
     .responsive {
         margin-top: 2.7em;
         max-width: 7.1em;
         width: 100%;
         height: auto;
     }
-
     main {
         max-width: 25em;
         width: 100%;
@@ -92,5 +88,4 @@ a{
         background-color: floralwhite;
         border-radius: 1.5625em;
     }
-
 }
