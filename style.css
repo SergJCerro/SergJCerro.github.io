@@ -7,13 +7,17 @@ html {
 body {
     font-family: 'Noto Sans SC', sans-serif;
 }
-
+h1{
+    font-size: 3em;
+}
 .Name {
     padding-left: 3.125em;
 }
+h2,li{
+    font-size: 1.39em;
+}
 
 main{
-    max-width: 31.25em;
     width: 100%;
     height: auto;
     background-color: floralwhite;
@@ -30,8 +34,8 @@ header{
 .responsive {
     float: right;
     margin-top: 2.6em;
-    margin-right: 0.2em;
-    max-width: 9.375em;
+    margin-right: 4em;
+    max-width: 17em;
     width: 100%;
     height: auto;
     border-radius: 0.9375em;
@@ -43,6 +47,7 @@ header{
 }
 
 footer {
+    font-size: 1.29em;
     text-align: center;
     background-color: deepskyblue;
     border: 0.125em solid cyan;
@@ -73,7 +78,7 @@ a {
         font-size: 1.25em;
     }
     p {
-        font-size: 0.1em;
+        font-size: 0.15em;
     }
     .responsive {
         margin-top: 2.7em;
@@ -82,7 +87,6 @@ a {
         height: auto;
     }
     main {
-        max-width: 25em;
         width: 100%;
         height: auto;
         background-color: floralwhite;
