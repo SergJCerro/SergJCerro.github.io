@@ -1,27 +1,26 @@
 @media screen and (max-width: 48em){
-    h1{
-        font-size: 3em;
-    }
-    h2{
-        font-size: 2.6em;
-    }
-    .long{
-        font-size: 2.2em;
-    } 
-    h3{
-        font-size: 2.2em;
-    }
-    section a {
-        font-size: 2em;
-    }
-   section p{
-        font-size:1.8em;
-    }
-    main{
-        grid-template-columns: 1fr 1fr;
-    }
-    .responsive{
-        padding: 0.625em;
-    }
-    
+  main{
+      grid-template-columns: 1fr 1fr;
+  }
+  h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2.6em;
+}
+h3{
+    font-size: 2.2em;
+}
+.long{
+    font-size: 2.2em;
+} 
+section a {
+    font-size: 2em;
+}
+section p{
+    font-size:1.3em;
+}
+.responsive{
+    padding: 0.625em;
+}
 }
