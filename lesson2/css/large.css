@@ -17,6 +17,9 @@ body {
     padding: 0.125em;
     border-radius: 1.5625em;
 }
+p{
+    font-size: 1em;
+}
 main{
     text-align: center;
     display: grid;
