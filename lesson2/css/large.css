@@ -1,15 +1,17 @@
-
 * {
     box-sizing: border-box;
-  }
-html {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
+
+html {
+    background: rgb(126, 63, 251);
+    background: linear-gradient(90deg, rgba(126, 63, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
 body {
     font-family: 'Noto Sans SC', sans-serif;
     text-align: center;
 }
+
 .header {
     text-align: center;
     background-color: deepskyblue;
@@ -17,30 +19,37 @@ body {
     padding: 0.125em;
     border-radius: 1.5625em;
 }
-p{
+
+p {
     font-size: 1em;
 }
-main{
+
+main {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.625em;
 }
+
 section {
     background-color: #FFF5EE;
     border-radius: 0.9375em;
     text-align: center;
     margin: 0.625em;
-  }
-  section a{
-      color: black;
-  }
-h2,h3,p{
-    color: hsla(200,0%,0%,.7);
 }
-.description{
+
+section a {
+    color: black;
+}
+
+h2, h3, p {
+    color: hsla(200, 0%, 0%, .7);
+}
+
+.description {
     padding: 1em;
 }
+
 footer {
     text-align: center;
     background-color: deepskyblue;
@@ -48,14 +57,17 @@ footer {
     border-radius: 1.25em;
     padding: 0.0625em;
 }
-footer a{
-    color:hsla(200,0%,0%,.7);
+
+footer a {
+    color: hsla(200, 0%, 0%, .7);
 }
-.responsive{
+
+.responsive {
     max-width: 23em;
     width: 100%;
     height: auto;
     padding: 0.625em;
+    border-radius: 2em;
 }
 
 .outer {
