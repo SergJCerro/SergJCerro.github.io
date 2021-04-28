@@ -73,30 +73,3 @@ a {
     font-size: 0.9em;
 }
 
-@media screen and (max-width: 37.5em) {
-    h1 {
-        font-size: 1.em;
-    }
-
-    .responsive {
-        margin-top: 2.7em;
-        margin-right: 1em;
-        max-width: 7.3em;
-        width: 100%;
-        height: auto;
-    }
-    .up {
-        font-size: 0.7em;
-    }
-    
-    .date {
-        color: hsla(200, 0%, 0%, .7);
-        font-size: 0.7em;
-    }
-    main {
-        width: 100%;
-        height: auto;
-        background-color: floralwhite;
-        border-radius: 1.5625em;
-    }
-}
