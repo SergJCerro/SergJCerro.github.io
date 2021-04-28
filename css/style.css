@@ -6,20 +6,17 @@ html {
 body {
     font-family: 'Noto Sans SC', sans-serif;
 }
-
-h1 {
-    font-size: 2em;
+h1{
+    font-size: 1.7em;
 }
-
 .Name {
     padding-left: 3.125em;
 }
-
-h2, li {
+h2,li{
     font-size: 1.39em;
 }
 
-main {
+main{
     max-width: 900px;
     width: 100%;
     height: auto;
@@ -27,7 +24,7 @@ main {
     border-radius: 1.5625em;
 }
 
-header {
+header{
     background-color: deepskyblue;
     border: 0.125em solid cyan;
     padding: 0.2em;
@@ -37,8 +34,8 @@ header {
 .responsive {
     float: right;
     margin-top: 2.6em;
-    margin-right: 4em;
-    max-width: 15em;
+    margin-right: 3em;
+    max-width: 10em;
     width: 100%;
     height: auto;
     border-radius: 0.9375em;
@@ -74,30 +71,4 @@ a {
 .date {
     color: hsla(200, 0%, 0%, .7);
     font-size: 0.9em;
-}
-
-@media screen and (max-width: 37.5em) {
-    h1 {
-        font-size: 1.em;
-    }
-    .responsive {
-        margin-top: 2.7em;
-        margin-right: 1em;
-        max-width: 7.3em;
-        width: 100%;
-        height: auto;
-    }
-    .up {
-        font-size: 0.7em;
-    }
-    .date {
-        color: hsla(200, 0%, 0%, .7);
-        font-size: 0.7em;
-    }
-    main {
-        width: 100%;
-        height: auto;
-        background-color: floralwhite;
-        border-radius: 1.5625em;
-    }
 }
