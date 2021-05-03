@@ -20,5 +20,3 @@ function change(){
        
     }
 }
-setInterval(updateBackground, 1000 * 60);
-updateBackground();

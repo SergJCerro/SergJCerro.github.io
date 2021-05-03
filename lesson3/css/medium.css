@@ -1,0 +1,23 @@
+@media only screen and (min-width: 40em) {
+    .color-scheme{
+        grid-template-columns: 1fr 1fr;
+    }
+    column{
+        width: 50%;
+    }
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    h1{
+        font-size: 1.89em;
+    }
+    .colum{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.625em;
+    }
+    .responsive{
+        max-width: 15em;
+        width: 100%;
+        height: 10em;
+    }
+}

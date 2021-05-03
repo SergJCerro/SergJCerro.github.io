@@ -1,60 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="SergioJCerritos">
-    <meta name="description" content="WDD-230 Week 03 Project Website Planning by Sergio J Cerritos ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.cssS">
-    <link rel="icon" href="images/profile.png">
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="SergioJCerritos" />
+    <meta
+      name="description"
+      content="WDD-230 Week 03 Project Website Planning by Sergio J Cerritos "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="icon" href="images/profile.png" />
     <title>Color Scheme</title>
-</head>
+  </head>
 
-<body onload="change()">
-    <main>
-        <header>
-            <div class="head">
-                <h1>Sunshine View Color Scheme</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/lesson3/index.html">Home</a></li>
-                    <li><a href="/lesson3/target-audience.html">Target Audience</a></li>
-                    <li><a href="/lesson3/color-scheme.html">Color Scheme</a></li>
-                    <li><a href="/lesson3/typography.html">Typography</a></li>
-                </ul>
-            </nav>
-        </header>
-        <seciton>
-            <h2>Color Scheme for Sunshine View</h2>
-            <p>The Proposed color scheme for Sunshine View <br>
-                <span class="color1">Header - #041A4D </span> <span class="h">Text Color - #FAFEFD</span> <br>
-                <span class="color2">Nav - #A3C7D9</span> Text Color : Black<br>
-                <span class="color3">Website Main Color - #D5E0E6</span><br>
-                <span class="color4">Footer Color - #E6D5B8</span>
-            </p>
-            <h2>Color Scheme :</h2>
-            <img src="images/color.jpeg" alt="pallete" class="res" width="400" height="350">
-        </seciton>
-        <footer>
-            <div class="outer">
-                <p class="up">&#169;<span id="Year"></span> Sergio J Cerritos | Belize | <a
-                        href="https://www.byui.edu/online" target="_blank">
-                        BYUI Online Learning</a></p>
-                <p class="date">Last Modified : <span id="LastUpdate"></span>
-                </p>
-            </div>
-        </footer>
-        <script src="js/date.js"></script>
-        <script src="js/script.js"></script>
+  <body onload="change()">
+    <header>
+      <div class="head">
+        <h1>Sunshine View Color Scheme</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/lesson3/index.html">Home</a></li>
+          <li><a href="/lesson3/target-audience.html">Target Audience</a></li>
+          <li><a href="/lesson3/color-scheme.html">Color Scheme</a></li>
+          <li><a href="/lesson3/typography.html">Typography</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="color-scheme">
+      <div class="row">
+        <div
+          class="column"
+          onclick="openTab('b1');"
+          style="background: #ffdab9"
+        >
+          Click to view : Color Scheme 
+        </div>
+        <div
+          class="column"
+          onclick="openTab('b2');"
+          style="background: #b0e0e6"
+        >
+          Click to view : Proposed Colors
+        </div>
+        <div
+          class="column"
+          onclick="openTab('b3');"
+          style="background: #6a5acd"
+        >
+          Click to view : Color-Scheme
+        </div>
+      </div>
+      <div
+        id="b1"
+        class="containerTab"
+        style="display: none; background-color: #fafad2"
+      >
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Color Scheme For SV</h2>
+        <p>
+            The proposed color scheme used for
+        </p>
+      </div>
+
+      <div
+        id="b2"
+        class="containerTab"
+        style="display: none; background-color: #fafad2"
+      >
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Proposed Color Scheme</h2>
+        <p>
+            <span class="color1">Header - #041A4D </span>
+            <span class="h">Text Color - #FAFEFD</span> <br />
+            <span class="color2">Nav - #A3C7D9</span> Text Color : Black<br />
+            <span>Website Main Color - #D5E0E6</span><br />
+            <span class="color4">Footer Color - #E6D5B8</span>
+        </p>
+      </div>
+
+      <div
+        id="b3"
+        class="containerTab"
+        style="display: none; background-color: #fafad2"
+      >
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Image of Color Scheme</h2>
+        <img src="images/color.jpeg" alt="color-scheme" class="res" width="300"
+        height="300">
+       
+      </div>
+      
+      <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+      </script>
     </main>
-</body>
-
+    <footer>
+      <div class="outer">
+        <p class="up">
+          &#169;<span id="Year"></span> Sergio J Cerritos | Belize |
+          <a href="https://www.byui.edu/online" target="_blank">
+            BYUI Online Learning</a
+          >
+        </p>
+        <p class="date">Last Modified : <span id="LastUpdate"></span></p>
+      </div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
