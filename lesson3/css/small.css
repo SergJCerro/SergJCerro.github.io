@@ -93,7 +93,7 @@ nav ul {
   list-style: none;
   font-size: 1.3em;
   display: grid;
-  grid-template-columns: repeat(4 1fr);
+  grid-template-columns:  1fr 1fr 1fr 1fr;
   margin: 0;
   padding: 0.6em;
 }
