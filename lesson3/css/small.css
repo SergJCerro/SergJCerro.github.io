@@ -1,3 +1,10 @@
+@font-face{
+    font-family : 'Dancing Script';
+font-style : normal;
+font-weight : 400;
+font-display : swap;
+src : url(https://fonts.gstatic.com/s/dancingscript/v16/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSoHTQ.ttf) format('truetype');
+}
 body {
   padding: 1.7em;
 }
