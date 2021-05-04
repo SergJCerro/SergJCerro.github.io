@@ -1,20 +1,41 @@
 body {
-  font-family: American Typewriter, serif;
   padding: 1.7em;
 }
 main {
   border-radius: 1.5625em;
   padding: 0.9em;
-  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fonth {
+  font-family: "Dancing Script", cursive;
+}
+.bodyp {
+  font-family: "EB Garamond", serif;
 }
 .color-scheme {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   grid-gap: 0.625em;
-  
 }
 
+.typo {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.625em;
+  padding: 0.7em;
+}
+.typo section {
+    border-radius: 1.6em;
+  background-color: aliceblue;
+}
+.fonts{
+    max-width: 17em;
+    width: 100%;
+    height: auto;
+    border-radius: 1.6em;
+}
 .column {
   float: inline-start;
   width: 95%;
@@ -28,7 +49,6 @@ main {
 .containerTab {
   padding: 0.06em;
   color: black;
-  
 }
 
 .row:after {
@@ -36,11 +56,11 @@ main {
   display: table;
   clear: both;
 }
-.closebtn{
-    float: right;
-    color: black;
-    cursor: pointer;
-    font-size:2em;
+.closebtn {
+  float: right;
+  color: black;
+  cursor: pointer;
+  font-size: 2em;
 }
 header {
   text-align: center;
@@ -55,6 +75,9 @@ section a {
   background-color: #041a4d;
   padding: 0.06em;
   border-radius: 1.5625em;
+}
+.head1 {
+  background-color: darkslateblue;
 }
 .head h1 {
   color: #fafefd;
@@ -80,8 +103,8 @@ nav a {
 }
 
 h1 {
-    padding: 0.1em;
-    font-size: 1.7em;
+  padding: 0.1em;
+  font-size: 1.7em;
   font-family: "Dancing Script", cursive;
 }
 footer {
@@ -95,8 +118,8 @@ footer a {
 }
 .colum {
   display: grid;
-  grid-gap:0.625em;
-  grid-template-columns: 1fr 1fr ;
+  grid-gap: 0.625em;
+  grid-template-columns: 1fr 1fr;
 }
 .responsive {
   max-width: 20.5em;
