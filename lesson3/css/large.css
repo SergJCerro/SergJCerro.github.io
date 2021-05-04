@@ -2,6 +2,7 @@
     nav ul{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         font-size: 1.4em;
+        display: grid;
     }
     h1{
         font-size: 2em;
@@ -11,9 +12,6 @@
     }
     p{
         font-size: 1.2em;
-    }
-    .colum{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .responsive{
         max-width: 19em;
