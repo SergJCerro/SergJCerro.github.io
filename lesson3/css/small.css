@@ -178,5 +178,5 @@ td, th {
   transition: 0.5s all ease-in-out;
 }
 .zoom:hover img{
-  transform: scale(2);
+  transform: scale(1.6);
 }
