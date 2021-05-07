@@ -63,7 +63,7 @@ main {
   cursor: pointer;
   font-size: 2em;
 }
-header {
+header, .person {
   text-align: center;
 }
 a {
@@ -157,4 +157,26 @@ footer a {
   height: auto;
   border-radius: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+table {
+  text-align: center;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  
+  padding: 8px;
+}
+.zoom img{
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: 0.5s all ease-in-out;
+}
+.zoom:hover img{
+  transform: scale(2);
 }
