@@ -92,7 +92,7 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav ul {
-  font-size: 1.3em;
+  font-size: 1em;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
   margin: 0;
@@ -109,7 +109,7 @@ nav ul li a {
 	padding: 0.7em;
     border-radius: 1.5625em;
 	text-decoration: none;
-	font-size: 0.95rem;
+	
 }
 nav a:hover {
   background-color: #fafefd;;
