@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+main{
+    background-color: #D5E0E6;
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 1.5265em;
+}
+.head {
+  background-color: #041a4d;
+  padding: 0.06em;
+  border-radius: 1.5625em;
+}
+.responsives{
+    float: left;
+}
+.head h1,
+.motto {
+  color: #fafefd;
+}
+.motto {
+  font-family: "Dancing Script", cursive;
+}
+nav {
+  margin: 0 auto;
+  background-color: #a3c7d9;
+  color: black;
+  padding: 0.69em;
+  border-radius: 1.5625em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.nav {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.nav li:first-child {
+  display: block;
+}
+
+.nav li {
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5em;
+  border-radius: 1.5265em;
+  font-weight: 200;
+}
+
+.nav a:hover {
+  background-color: #fafefd;
+}
+
+.responsive li {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.heading {
+    text-align: center;
+    
+  }
+  .contents{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed whitesmoke;
+    padding: 15px;
+    background-color: rgb(48,48,48);
+    color: white;
+    font-style: italic;
+  }
+
+footer {
+  text-align: center;
+  padding: 0.04em;
+  background-color: #e6d5b8;
+  border-radius: 1.5625em;
+}
+footer a {
+  color: black;
+}
