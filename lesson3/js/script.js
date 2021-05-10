@@ -6,7 +6,7 @@ document.querySelector("#Year").innerHTML = date.getFullYear();
     var time = new Date().getHours();
     var body = document.body;
     var bstyle = body.style;
-    if (time < 10) {
+    if (time >5 && time < 9) {
       bstyle.backgroundColor = "#f6d365";
       bstyle.backgroundImage =
         "linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5))";
