@@ -15,6 +15,13 @@ main{
 }
 h1{
   font-family: "EB Garamond", serif;
+  
+}
+p{
+  font-size: 1.2em;
+}
+main div{
+font-size: 1.3em;
 }
 .head1 h1,
 .motto {
@@ -22,8 +29,10 @@ h1{
 }
 .motto {
   font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
   padding: 0.06em;
 }
+
 nav {
   margin: 0 auto;
   background-color: #a3c7d9;
@@ -52,6 +61,7 @@ nav {
   padding: 0.5em;
   border-radius: 1.5265em;
   font-weight: 200;
+  font-size: 1.4em;
 }
 
 .nav a:hover {
@@ -66,7 +76,6 @@ a {
 }
 .heading {
     text-align: center;
-    
   }
   .contents{
     display: block;

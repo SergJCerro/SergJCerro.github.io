@@ -5,13 +5,13 @@
   }
   h1 {
       
-    font-size: 2em;
+    font-size: 2.2em;
   }
   h2 {
     font-size: 1.6em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   nav{
     grid-template-columns: repeat(6,1fr);
