@@ -37,4 +37,8 @@
   ul li:first-child {
     display: none;
   }
+  main div, footer{
+    border-radius: 1.526em;
+    max-width: 1000px;
+  }
 }

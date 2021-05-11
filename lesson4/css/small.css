@@ -92,6 +92,7 @@ a {
   }
 
 footer {
+  margin: 0 auto;
   text-align: center;
   padding: 0.04em;
   background-color: #e6d5b8;
