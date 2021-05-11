@@ -45,21 +45,21 @@ nav ul .active {
   background-color: lightblue;
   border-radius: 1.5em;
 }
-.nav {
+ul {
   list-style: none;
   text-align: center;
   padding: 0;
 }
 
-.nav li:first-child {
+ul li:first-child {
   display: block;
 }
 
-.nav li {
+ul li {
   display: none;
 }
 
-.nav a {
+ul a {
   color: black;
   display: block;
   padding: 0.5em;
@@ -68,7 +68,7 @@ nav ul .active {
   font-size: 1.4em;
 }
 
-.nav a:hover {
+ul a:hover {
   background-color: #fafefd;
 }
 

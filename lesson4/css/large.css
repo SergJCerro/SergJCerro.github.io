@@ -14,24 +14,27 @@
     font-size: 1em;
   }
   nav{
-    grid-template-columns: repeat(6,1fr);
-    padding: 0.2em;
+    padding: 0.1em;
   }
-  .nav {
+  ul{
+    grid-template-columns: repeat(6,1fr);
+    padding: 0.05em;
+  }
+  ul {
     display: flex;
   }
 
-  .nav li {
+  ul li {
     display: block;
     flex: 1 1 auto;
   }
 
-  .nav a {
+  ul a {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
-  .nav li:first-child {
+  ul li:first-child {
     display: none;
   }
 }
