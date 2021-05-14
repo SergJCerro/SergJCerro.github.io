@@ -1,8 +1,6 @@
-
-
-//const date = new Date();
-//document.querySelector("#Year").innerHTML = date.getFullYear();
-//document.querySelector("#LastUpdate").innerHTML = document.lastModified;
+const date = new Date();
+document.querySelector("#Year").innerHTML = date.getFullYear();
+document.querySelector("#LastUpdate").innerHTML = document.lastModified;
 
 function change() {
   var time = new Date().getHours();

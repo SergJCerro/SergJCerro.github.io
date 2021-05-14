@@ -4,35 +4,40 @@ main{
     background-color: #D5E0E6;
     text-align: center;
     padding: 0.7em;
-    
 }
-.head1 {
+header {
   background-color: #041a4d;
-  padding: 0.9em;
-}
-.responsives{
-    float: left;
-}
-h1{
-  font-family: "EB Garamond", serif;
+  color: #fafefd;
+  align-items:center;
+  justify-content: center;
+  display: flex;
   
 }
-p{
-  font-size: 1.2em;
-}
-main div{
-font-size: 1.3em;
-}
-.head1 h1,
-.motto {
-  color: #fafefd;
-}
-.motto {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5em;
-  padding: 0.06em;
+
+header img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  padding-right: 10px;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h1 {
+  font-size: 1.8em;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0px;
+}
+.motto {
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1pt;
+}
 nav {
   margin: 0 auto;
   background-color: #a3c7d9;
@@ -78,19 +83,6 @@ ul a:hover {
 a {
   text-decoration: none;
 }
-.heading {
-    text-align: center;
-  }
-  .contents{
-    display: block;
-    margin: 10px auto;
-    border: 1px dashed whitesmoke;
-    padding: 15px;
-    background-color: rgb(48,48,48);
-    color: white;
-    font-style: italic;
-  }
-
 footer {
   margin: 0 auto;
   text-align: center;
