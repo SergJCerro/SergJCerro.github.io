@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Book Of Mormon Add List by Sergio Cerritos"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="boom.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book of Mormon</title>
+  </head>
+  <body onload="change()">
+    <header id="myDiv">
+      <h1>
+        Scriptures From <br />
+        The Book of Mormon &#128216;
+      </h1>
+    </header>
+    <main>
+      <div class="lal">
+        <label for="myInput">Enter a Scripture &#128214;</label>
+        <input type="text" id="myInput" placeholder="Helaman 5:12" />
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      <div class="list1">
+        <ul id="myUL">
+          <li>Ether 12:27</li>
+          <li class="checked">Helaman 5:12</li>
+          <li>Isaiah 53:5</li>
+          <li>2 Nephi 4:4</li>
+          <li>Isaiah 41:10</li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
