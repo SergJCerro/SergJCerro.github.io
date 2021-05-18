@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Book Of Mormon Add List by Sergio Cerritos"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="boom.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    
+   
+    <title>Book of Mormon</title>
+  </head>
+  <body onload="change()" oncontextmenu="return false">
+    <header id="myDiv">
+      <h1 class="app-title">
+        Scriptures From <br />
+        The Book of Mormon &#128216;
+      </h1>
+    </header>
+    <main>
+        <div class="container">
+          
+
+          <div class="empty-state">
+            <svg class="checklist-icon"><use href="#checklist-icon"></use></svg>
+            <label for="JS">Enter a Scripture</label>
+            
+          </div>
+        
+          <form class="js-form">
+            <input autofocus type="text" id="JS" aria-label="Enter a new todo item" placeholder="E.g. Helaman 5:12" class="js-todo-input">
+          </form>
+          <ul class="todo-list js-todo-list"></ul>
+        </div>
+      </main>
+      
+      
+    <script src="index.js"></script>
+  </body>
+</html>
