@@ -3,6 +3,7 @@
 	padding: 0;
 }
 body {
+	text-align: center;
 	height: 80vh;
 	font-size: 18px;
 	align-items: center;
@@ -12,12 +13,6 @@ h1{
 	font-family: 'Lobster', cursive;
 	transition: 0.01s;
     text-shadow: 2px 2px 4px #fff;
-}
-header{
-	text-align: center;
-}
-.lal{
-	padding: 4px;
 }
 main {
 	max-width: max-content;
@@ -33,16 +28,10 @@ button {
 label {
 	font-size: 1rem;
 }
-
-.list1 {
-	margin: 1rem;
-	border: 1px solid #bbb;
-}
 ul {
 	margin: 1rem;
 	list-style: none;
 }
-
 li {
 	display: flex;
 	align-items: center;
@@ -57,27 +46,26 @@ ul li.checked {
 	color:#000000;
 	text-decoration: line-through;
   }
-  .close {
-
-	right: 0;
-	top: 0;
-	padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
+  .removeButton {
 	background-color: #f44336;
 	color: white;
 	
   }
-  .addBtn{
+  .upButton:hover{
+	  background-color: blue;
+  }
+  .downButton:hover{
+	  background-color: blue;
+  }
+  .add{
 	  padding: 3px;
 	  cursor: pointer;
 	  transition: 0.3s;
 	  text-align: center;
 	  border-radius: 1.5265em;
   }
-  .addBtn:hover {
-	background-color: #bbb;
+  .add:hover {
+	background-color:aqua;
   }
   @media only screen and (min-width: 75rem){
 	body {
