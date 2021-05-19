@@ -89,7 +89,8 @@ html {
   
   .delete-todo {
     border: none;
-    background-color: transparent;
+    background-color: red;
+    content: "\u274c";
     outline: none;
     cursor: pointer;
   }
