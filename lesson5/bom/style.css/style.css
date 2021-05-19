@@ -28,6 +28,10 @@ button {
 label {
 	font-size: 1rem;
 }
+.list{
+	margin: 1rem;
+	border: 1px solid #bbb;
+}
 ul {
 	margin: 1rem;
 	list-style: none;
@@ -49,7 +53,9 @@ ul li.checked {
   .removeButton {
 	background-color: #f44336;
 	color: white;
-	
+	right: 0;
+    top: 0;
+    padding: 10px 12px 10px 12px;
   }
   .upButton:hover{
 	  background-color: blue;

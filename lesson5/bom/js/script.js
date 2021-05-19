@@ -4,14 +4,14 @@ const addItemButton = document.querySelector('button');
 const lis = listLI.children;
 
 function attachListItemButtons(li) {
-  let up = document.createElement('button');
+  /*let up = document.createElement('button');
   up.className = 'upButton';
   up.textContent = 'Up';
   li.appendChild(up);
   let down = document.createElement('button');
   down.className = 'downButton';
   down.textContent = 'Down';
-  li.appendChild(down);
+  li.appendChild(down);*/
   let remove = document.createElement('button');
   remove.className = 'removeButton';
   remove.textContent = '❌';
@@ -39,13 +39,14 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 // clicking the buttons
+
 listLI.addEventListener('click', (event) => {
   if(event.target.tagName == 'BUTTON'){
     if (event.target.className == 'removeButton') {
       let li = event.target.parentNode;
       let ul = li.parentNode;
       ul.removeChild(li);
-    }
+    } 
     if (event.target.className == 'upButton') {
       let li = event.target.parentNode;
       let prevLi = li.previousElementSibling;
