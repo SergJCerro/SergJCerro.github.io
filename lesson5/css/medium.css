@@ -56,6 +56,10 @@
   table{
     max-width: 600px;
   }
+  .main{
+    margin: 0 auto;
+    max-width: 800px;
+  }
   .headdiv img {
     max-width: fit-content;
   }
