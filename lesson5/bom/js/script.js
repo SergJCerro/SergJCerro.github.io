@@ -85,7 +85,7 @@ function change() {
     bstyle.backgroundColor =
       "-webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342))";
     bstyle.backgroundImage =
-      "url('https://cdn.glitch.com/4710df49-ef60-4c99-a2a5-a2630ac50f5c%2Fstars.png?v=1619905743243')";
+      "url('stars.png')";
   }
 }
 function log() {

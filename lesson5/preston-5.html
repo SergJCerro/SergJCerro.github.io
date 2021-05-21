@@ -9,27 +9,23 @@
       content="WDD-230 Week 04 Preston Town by Sergio J Cerritos "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/moon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  
+
     <title>Preston Town Page</title>
   </head>
-  <body onload="change()">
-    <div id="announce" style="display: block;"></div>
+  <body>
+    <div id="announce" style="display: block"></div>
     <header>
       <picture>
-        <img src="images/sun.png" alt="">
+        <img src="images/suns.png" alt="" width="300" height="300" />
       </picture>
       <section class="heading">
         <h1>Sunshine View</h1>
-        <div class="motto">"The Pathway can become Bright if theres <i> Sunshine </i> "</div>
+        <div class="motto">
+          "The Pathway can become Bright if theres <i> Sunshine </i> "
+        </div>
       </section>
     </header>
     <nav>
@@ -45,13 +41,109 @@
     </nav>
     <main>
       <h2>Preston</h2>
+      <div class="headdiv">
+        <img
+          src="images/idaho.jpg"
+          alt="Idaho_mountains"
+          class="ImgRes"
+          width="300"
+          height="300"
+        />
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <p>Currently: Cloudy</p>
+          <p>High: 70 °F</p>
+          <p>Wind Chill: °F</p>
+          <p>Humidity: 40%</p>
+          <p>Wind Speed: 4 mph</p>
+        </section>
+      </div>
+      <div class="forecastdiv">
+        <h3>5 Day Forecast</h3>
+        <table id="fiveDay">
+          <thead>
+            <tr id="forecastDay">
+              <th>Mon</th>
+              <th>Tues</th>
+              <th>Wed</th>
+              <th>Thurs</th>
+              <th>Fri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="images/SunnySmile.png"
+                  alt=""
+                  width="300"
+                  height="300"
+                />
+                <br />
+                <span id="degrees1">80 °F</span>
+              </td>
+              <td>
+                <img
+                  src="images/SunnyCLoudy.png"
+                  alt=""
+                  width="300"
+                  height="300"
+                />
+                <br />
+                <span id="degrees2">75 °F</span>
+              </td>
+              <td>
+                <img
+                  src="images/EvilStrom.png"
+                  alt=""
+                  width="300"
+                  height="300"
+                />
+                <br />
+                <span id="degrees3">70 °F</span>
+              </td>
+              <td>
+                <img
+                  src="images/CloudySmile.png"
+                  alt=""
+                  width="300"
+                  height="300"
+                />
+                <br />
+                <span id="degrees4">74 °F</span>
+              </td>
+              <td>
+                <img src="images/SadSnow.png" alt="" width="300" height="300" />
+                <br />
+                <span id="degrees5">75 °F</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="articlediv">
+        <img
+          id="article_img"
+          src="images/mountain.jpg"
+          alt="Storm Image"
+          width="300"
+          height="300"
+        />
+        <h3>Articles</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam
+          odio eveniet esse laudantium perspiciatis, aliquid sequi quasi
+          asperiores atque veritatis dolores temporibus praesentium tenetur
+          excepturi saepe sit incidunt reprehenderit!
+        </p>
+      </div>
 
     </main>
     <footer>
       <div class="outer">
         <p class="up">
           &#169;<span id="Year"></span> Sergio J Cerritos | Belize |
-          <a href="https://www.byui.edu/online" target="_blank">
+          <a href="https://www.byui.edu/online" target="_blank" rel="noopener">
             BYUI Online Learning</a
           >
         </p>
