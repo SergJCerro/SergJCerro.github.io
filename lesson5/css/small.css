@@ -11,7 +11,6 @@ header {
   display: flex;
   
 }
-
 header img {
   max-width: 250px;
   width: 100%;
@@ -89,7 +88,7 @@ a {
   position: relative;}
   
 .headdiv img {
-  max-width: 1500px;
+  max-width: 500px;
   width: 100%;
   height: auto;
   border-radius: 1.5265em;
@@ -146,6 +145,39 @@ max-width: 300px;
 width: 100%;
 height: auto;
 border-radius: 1.5265em;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#announce {
+  display: none;
+  background-color: #a3c7d9;
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+.contact_info {
+  grid-column: 1;
+  margin: auto;
+}
+
+.contact_info h3, .contact_info h4 {
+  text-align: center;
+  
+}
+.contactdiv {
+	display: grid;
+	grid-template-columns: 1fr;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+	border: 1px solid #000;
+  border-radius: 1.5265em;
+}
+.Map{
+  border-radius: 1.5265em;
+  max-width: 350px;
+  
 }
 footer {
   margin: 0 auto;
