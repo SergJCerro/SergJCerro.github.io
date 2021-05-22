@@ -1,18 +1,17 @@
-body{
+body {
   text-align: center;
 }
-main{
-    background-color: #D5E0E6;
-    text-align: center;
-    padding: 0.7em;
+main {
+  background-color: #d5e0e6;
+  text-align: center;
+  padding: 0.7em;
 }
 header {
   background-color: #041a4d;
   color: #fafefd;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   display: flex;
-  
 }
 header img {
   max-width: 250px;
@@ -29,7 +28,7 @@ header img {
 }
 
 .heading h1 {
-  float:right;
+  float: right;
   font-size: 1.8em;
   font-family: "EB Garamond", serif;
   margin-bottom: 0px;
@@ -87,9 +86,10 @@ a {
   text-decoration: none;
 }
 .headdiv {
-	margin: 10px auto;
-  position: relative;}
-  
+  margin: 10px auto;
+  position: relative;
+}
+
 .headdiv img {
   max-width: 500px;
   width: 100%;
@@ -98,19 +98,19 @@ a {
 }
 
 .summary {
-	position: absolute;
+  position: absolute;
   top: 0px;
-  font-size: .75em;
-	background: radial-gradient(#eee, #EDF5E1);
+  font-size: 0.75em;
+  background: radial-gradient(#eee, #edf5e1);
   border-radius: 1.5265em;
-	border: 1px solid #000;
-	padding: 5px;
-	box-shadow: 0 0 30px #111;
-	opacity: .8;
+  border: 1px solid #000;
+  padding: 5px;
+  box-shadow: 0 0 30px #111;
+  opacity: 0.8;
 }
 
 .summary p {
-  color: #05386B;
+  color: #05386b;
   font-weight: bolder;
 }
 #fiveDay {
@@ -120,35 +120,33 @@ a {
   color: #05386b;
 }
 
-td{
+td {
   border: 1px solid #000;
 }
 #forecastDay {
   background-color: #041a4d;
   color: #fafefd;
 }
-table{
+table {
   max-width: 325px;
 }
-tbody img{
+tbody img {
   max-width: 100px;
   width: 100%;
   height: auto;
-  border-radius: 1.5265em;
 }
 .articlediv {
-	display: block;
-	margin-top: 15px;
-	padding: 10px;
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
   border: 1px solid #000;
-  border-radius: 1.5265em;
 }
-.articlediv img{
-max-width: 300px;
-width: 100%;
-height: auto;
-border-radius: 1.5265em;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.articlediv img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #announce {
   display: none;
@@ -164,23 +162,21 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
 }
 
-.contact_info h3, .contact_info h4 {
+.contact_info h3,
+.contact_info h4 {
   text-align: center;
-  
 }
 .contactdiv {
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
-	border: 1px solid #000;
-  border-radius: 1.5265em;
+  border: 1px solid #000;
 }
-.Map{
+.Map {
   border-radius: 1.5265em;
   max-width: 350px;
-  
 }
 footer {
   margin: 0 auto;
