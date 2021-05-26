@@ -68,7 +68,7 @@
     font-size: 5em;
     color: crimson;
     display: block;
-    
+    visibility: visible;
   }
   .top-right1, .top-right2{
     display: none;

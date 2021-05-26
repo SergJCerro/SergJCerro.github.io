@@ -193,5 +193,7 @@ footer a {
     right: 16px;
     font-size: 4em;
     color: crimson;
-   
+}
+.top-right1, .top-right{
+  visibility: hidden;
 }

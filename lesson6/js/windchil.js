@@ -1,5 +1,7 @@
-const temp = document.getElementById('temperature').innerHTML;
-const windspeed = document.getElementById('windspeed').innerHTML;
+
+
+const temp = document.querySelector('#temperature').innerHTML;
+const windspeed = document.querySelector('#windspeed').innerHTML;
 
 
 let windchills = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
@@ -8,4 +10,4 @@ let windchills = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + 
   } else {
      windchills = "N/A";
   }
-document.getElementById('windchill').innerHTML = windchills;
+document.querySelector('#windchill').textContent = windchills;

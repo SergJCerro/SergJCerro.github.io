@@ -72,7 +72,7 @@
     right: 60px;
     font-size: 4em;
     color: crimson;
-   
+    visibility: visible;
   }
   .top-right, .top-right2{
     display: none;
