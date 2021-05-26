@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Preston Idaho Sunshineview Website " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/moon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <title>Preston Town Page</title>
+  </head>
+  <body>
+    <div id="announce" style="display: block"></div>
+    <header>
+      <picture>
+        <img src="images/suns.png" alt="" width="300" height="300" />
+      </picture>
+      <section class="heading">
+        <h1>Sunshine View</h1>
+        <div class="motto">
+          "The Pathway can become Bright if theres <i> Sunshine </i> "
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li><a href="#" onclick="Menu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston</h2>
+      <div class="main">
+        <div class="headdiv">
+          <img
+            src="images/hero1.jpg"
+            alt="Idaho_mountains"
+            class="ImgRes"
+            width="300"
+            height="300"
+          />
+          <div class="top-right2">Small</div>
+          <div class="top-right1">Medium</div>
+          <div class="top-right">Large</div>
+          <section class="summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: Sunny</p>
+            <p>High:<span id="temperature">8</span> °F</p>
+            <p>Windchill:<span id="windchill"> </span> °F</p>
+            <p>Humidity: 40%</p>
+            <p>Wind Speed:<span id="windspeed">10</span></p>
+          </section>
+        </div>
+        <div class="forecastdiv">
+          <h3>5 Day Forecast</h3>
+          <table id="fiveDay">
+            <thead>
+              <tr id="forecastDay">
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="images/SunnySmile.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="degrees1">80 °F</span>
+                </td>
+                <td>
+                  <img
+                    src="images/SunnyCLoudy.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="degrees2">75 °F</span>
+                </td>
+                <td>
+                  <img
+                    src="images/EvilStrom.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="degrees3">70 °F</span>
+                </td>
+                <td>
+                  <img
+                    src="images/CloudySmile.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="degrees4">74 °F</span>
+                </td>
+                <td>
+                  <img
+                    src="images/SadSnow.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="degrees5">75 °F</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="articlediv">
+          <img
+            id="article_img"
+            src="images/lake_mountain.gif"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <h3>Articles</h3>
+          <h4>By Mike Kieffer</h4>
+          <p>
+            Lake Mountain is a Mountain Range that is located in the northern
+            end of Utah County. To its east, it is bordered by Saratoga Springs
+            and Utah lake. To its West, it is boarded by Eagle Mountain and the
+            Cedar Valley. “The range is arc-shaped, curved to the east. The Lake
+            Mountains have no prominent peaks, but a central ridgeline, about 5
+            miles (8.0 km) long, that trends slightly north-northwest by
+            south-southeast. The highest point in the range is an unnamed peak,
+            with an elevation of 7,690 feet (2,340 m). There are seventeen named
+            canyons on the east side of the range, running toward Utah Lake:
+            Long, Pfieffer, Burnt (southern), Chaparral, Miners, Potter, Enoch,
+            Seep, Little, Olaf, Limekiln, Losee, Clark, Israel, Lott, Burnt
+            (northern), and Reformation canyons (from south to north), with
+            Limekiln Canyon being in the approximate center. The west side has
+            much fewer named canyons, running toward Cedar Valley: Mercer,
+            Ivans, Wildcat, and Wiley (from south to north), with Wiley Canyon
+            being in the approximate center.” [Source] Israel and Hidden Hollow
+            on the north end of the range are where a lot of Eagle Mountain and
+            Saratoga Springs residents enjoy the outdoors. The mountain range
+            also has some well-used mountain biking paths.
+          </p>
+        </div>
+        <div class="contactdiv">
+          <img
+            src="images/map.png"
+            alt="map"
+            width="300"
+            height="300"
+            class=""
+          />
+          <div class="contact_info">
+            <h4>Contact Information</h4>
+            <h3>1234 Storm Avenue</h3>
+            <h3>Preston, Idaho 83707</h3>
+            <h3>986-222-1234</h3>
+            <h3>contact@Sunshineview.net</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="outer">
+        <p class="up">
+          &#169;<span id="Year"></span> Sergio J Cerritos | Belize |
+          <a href="https://www.byui.edu/online" target="_blank" rel="noopener">
+            BYUI Online Learning</a
+          >
+        </p>
+        <p class="date">Last Modified : <span id="LastUpdate"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchil.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  </body>
+</html>
