@@ -66,15 +66,5 @@
   .headdiv img {
     max-width: fit-content;
   }
-  .top-right1{
-    position: absolute;
-    top: 8px;
-    right: 60px;
-    font-size: 4em;
-    color: crimson;
-    visibility: visible;
-  }
-  .top-right, .top-right2{
-    display: none;
-  }
+  
 }

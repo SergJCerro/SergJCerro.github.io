@@ -1,10 +1,16 @@
 body {
   text-align: center;
+  
 }
 main {
-  background-color: #d5e0e6;
+  background-color:#041a4d;
   text-align: center;
   padding: 0.7em;
+}
+.main{
+  background-color: white ;
+  padding: 20px;
+  border-radius: 30px 60px;
 }
 header {
   background-color: #041a4d;
@@ -49,13 +55,14 @@ nav {
   text-align: center;
 }
 nav ul .active {
-  background-color: lightblue;
+  background-color: lightseagreen;
   border-radius: 1.5em;
 }
 ul {
   list-style: none;
   text-align: center;
   padding: 0;
+  
 }
 
 ul li:first-child {
@@ -94,7 +101,7 @@ a {
   max-width: 500px;
   width: 100%;
   height: auto;
-  border-radius: 1.5265em;
+  
 }
 
 .summary {
@@ -118,6 +125,9 @@ a {
   width: 700px;
   text-align: center;
   color: #05386b;
+}
+th{
+  padding: 5px;
 }
 
 td {
@@ -160,8 +170,15 @@ tbody img {
 .contact_info {
   grid-column: 1;
   margin: auto;
+  background-color: #041a4d;
+  color: #edf5e1;
+  padding: 10px;
+  border-radius: 10px 40px 10px;
 }
-
+.map{
+  border-radius: 60px/20px;
+  box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .contact_info h3,
 .contact_info h4 {
   text-align: center;
@@ -187,13 +204,8 @@ footer {
 footer a {
   color: black;
 }
-.top-right2{
-  position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 4em;
-    color: crimson;
-}
-.top-right1, .top-right{
-  visibility: hidden;
-}
+
+/*--cyber-yellow: hsla(48, 98%, 57%, 1);
+--cyan-process: hsla(199, 84%, 57%, 1);
+--green-blue-crayola: hsla(205, 74%, 45%, 1);
+*/

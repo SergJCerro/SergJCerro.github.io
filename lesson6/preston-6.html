@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Preston Idaho Sunshineview Website " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+      <!--
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap"
       rel="stylesheet"
-    />
+    / -->
     <link rel="icon" href="images/moon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
@@ -44,19 +45,20 @@
       </ul>
     </nav>
     <main>
-      <h2>Preston</h2>
+      <h2 style="color: white;">Preston</h2>
       <div class="main">
         <div class="headdiv">
+          <picture>
+          <source media="(min-width:640px) and (max-width:1199px)" srcset="images/hero_medium.jpg">
+          <source srcset="images/hero_small.jpg" media="(max-width:639px)">
           <img
-            src="images/hero1.jpg"
+            src="images/hero_larg.jpg"
             alt="Idaho_mountains"
             class="ImgRes"
             width="300"
             height="300"
           />
-          <div class="top-right2">Small</div>
-          <div class="top-right1">Medium</div>
-          <div class="top-right">Large</div>
+          </picture>
           <section class="summary">
             <h3>Weather Summary</h3>
             <p>Currently: Sunny</p>
@@ -172,7 +174,7 @@
             alt="map"
             width="300"
             height="300"
-            class=""
+            class="map"
           />
           <div class="contact_info">
             <h4>Contact Information</h4>
@@ -202,7 +204,7 @@
       WebFont.load({
   google: {
     families: [
-       'ZCOOL KuaiLe'
+       'Dancing Script' , 'EB Garmond'
     ]
   }
 });

@@ -26,7 +26,7 @@ var day = d.getDay();
 var date = d.getDate();
 var month = d.getMonth();
 var year = d.getFullYear();
-var dateStr = day1[day] + ", " + date + " " + month1[month] + " " + year;
+var dateStr = day1[day] + ", " + date + " " + month1[month] + " " ;
 document.querySelector("#Year").textContent = year;
 document.querySelector("#LastUpdate").textContent = dateStr;
 if (day1[day] == "Friday") {

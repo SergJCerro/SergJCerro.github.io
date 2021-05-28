@@ -14,10 +14,10 @@
     padding: 0.1em;
   }
   ul{
+    max-width: 900px;
+    margin-left: 250px;
     grid-template-columns: repeat(6,1fr);
     padding: 0.05em;
-  }
-  ul {
     display: flex;
   }
 
@@ -61,17 +61,6 @@
   #fiveDay {
     width: 800px;
   }
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 5em;
-    color: crimson;
-    display: block;
-    visibility: visible;
-  }
-  .top-right1, .top-right2{
-    display: none;
-  }
+
  
 }
