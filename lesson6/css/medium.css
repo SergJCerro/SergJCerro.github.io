@@ -41,7 +41,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #000;
+    
   }
   .forecastdiv {
     display: block;
@@ -57,7 +57,7 @@
     opacity: 0.8;
   }
   table{
-    max-width: 600px;
+    max-width: 500px;
   }
   .main{
     margin: 0 auto;
@@ -66,5 +66,8 @@
   .headdiv img {
     max-width: fit-content;
   }
-  
+  .map{
+    margin-left: 30px;
+    margin-top: 20px;
+  }
 }

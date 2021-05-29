@@ -209,3 +209,14 @@ footer a {
 --cyan-process: hsla(199, 84%, 57%, 1);
 --green-blue-crayola: hsla(205, 74%, 45%, 1);
 */
+@media only screen and (max-width : 280px){
+  table{max-width: 50px;}
+  .map{
+    max-width: 210px;
+  }
+  .contact_info{max-width: 200px;
+  margin-left: -20px;}
+  .four,.five{
+    display: none;
+  }
+}
