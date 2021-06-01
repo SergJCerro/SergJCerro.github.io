@@ -1,0 +1,26 @@
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+}
+header {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+img[data-src] {
+  filter: blur(0.4em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+  margin-top: 50px;
+}
+
+[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+}
