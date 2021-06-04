@@ -1,0 +1,48 @@
+@media only screen and (min-width: 75rem) {
+  
+  h1 {
+      
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1em;
+  }
+  nav{
+    padding: 0.1em;
+  }
+  ul{
+    max-width: 900px;
+    margin-left: 250px;
+    grid-template-columns: repeat(6,1fr);
+    padding: 0.05em;
+    display: flex;
+  }
+
+  ul li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  ul a {
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  ul li:first-child {
+    display: none;
+  }
+ main{
+   margin: auto 0;
+ }
+  .images{
+    background-color: azure;
+    max-width: 1000px;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ 
+}

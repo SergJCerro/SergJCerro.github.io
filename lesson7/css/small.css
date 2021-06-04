@@ -1,0 +1,146 @@
+body {
+  text-align: center;
+}
+main {
+  background-color: #d5e0e6;
+  text-align: center;
+  padding: 0.7em;
+}
+.main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px 60px;
+}
+header {
+  background-color: #041a4d;
+  color: #fafefd;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+header img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h1 {
+  float: right;
+  font-size: 1.8em;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0px;
+}
+.motto {
+  padding: 5px;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1pt;
+}
+nav {
+  margin: 0 auto;
+  background-color: #a3c7d9;
+  color: black;
+  padding: 0.69em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+nav ul .active {
+  background-color: lightseagreen;
+  border-radius: 1.5em;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+ul li:first-child {
+  display: block;
+}
+
+ul li {
+  display: none;
+}
+
+ul a {
+  color: black;
+  display: block;
+  padding: 0.5em;
+  border-radius: 1.5265em;
+  font-weight: 200;
+  font-size: 1.4em;
+}
+
+ul a:hover {
+  background-color: #fafefd;
+}
+
+.responsive li {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.headdiv {
+  margin: 10px auto;
+  position: relative;
+}
+
+.headdiv img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+#announce {
+  display: none;
+  background-color: #a3c7d9;
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.04em;
+  background-color: #e6d5b8;
+}
+footer a {
+  color: black;
+}
+
+/*--cyber-yellow: hsla(48, 98%, 57%, 1);
+--cyan-process: hsla(199, 84%, 57%, 1);
+--green-blue-crayola: hsla(205, 74%, 45%, 1);
+*/
+
+figure img[data-src] {
+  filter: blur(0.4em);
+}
+
+figure img {
+  filter: blur(0em);
+  transition: filter 0.1s;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.gallery:hover {
+  box-shadow: 0 0 50px #333;
+}
+[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+}
