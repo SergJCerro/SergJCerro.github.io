@@ -41,9 +41,10 @@
   const besuchsdatum = iDatum;
       localStorage.setItem("Datum_Besuch", besuchsdatum);
     
-      const einTagen = 1000 * 60 * 60 *24;
+      //const einTagen = 1000 * 60 * 60 *24;
       const ersterbesuch = new Date(localStorage.getItem("Datum_Besuch"));
-      const besuchsdauer  = iDatum - ersterbesuch; 
+     // const besuchsdauer  = iDatum - ersterbesuch; 
+     const besuchsdauer = iDatum /1000 /60/60/24;
       const tagSeit = besuchsdauer / einTagen ;
       let botschaft = 0;
       if (tagSeit <= 1){ 
