@@ -85,7 +85,7 @@ function setCookie(cname,cvalue,exdays) {
   
     if (user.visited)
     {
-      alert( "Welcome again " + user.username + " Your Last visit was  " +  new Date(user.visitedOn).toTimeString() );
+      alert( "Welcome again " + user.username + " Your Last visit was  at " +  new Date(user.visitedOn).toTimeString() );
       setCookie("username",user.username,365); 
 
     }
