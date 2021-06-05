@@ -65,7 +65,7 @@
    
    
  // To Calculate the result in milliseconds and then converting into days
- const Result = Math.round(visit_date - present_day.getTime()) / (one_day);
+ const Result = Math.round(present_day.getTime() - visit_date) / (one_day);
    
  const Final_Result = Result.toFixed(0);
    
