@@ -41,15 +41,14 @@
   const besuchsdatum = iDatum;
       localStorage.setItem("Datum_Besuch", besuchsdatum);
     
-      //const einTagen = 1000 * 60 * 60 *24;
+      const einTagen = 1000 * 60 * 60 *24;
       const ersterbesuch = new Date(localStorage.getItem("Datum_Besuch"));
-     // const besuchsdauer  = iDatum - ersterbesuch; 
-     const besuchsdauer = iDatum /1000 /60/60/24;
-      const tagSeit = besuchsdauer / einTagen ;
+     const besuchsdauer  = (iDatum - ersterbesuch) / (einTagen); 
+      const tagSeit = besuchsdauer.toFixed(0) ;
       let botschaft = 0;
       if (tagSeit <= 1){ 
         botschaft = "You Visited Sunshine View🌅 Today ";
       } else {
-       botschaft = tagSeit.toFixed(0);
+       botschaft = tagSeit;
       }
       document.querySelector("#day").textContent = botschaft;
