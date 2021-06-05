@@ -27,7 +27,7 @@ const iDatum = new Date();
 if (typeof Storage !== "undefined") {
   if (localStorage.visits) {
     document.querySelector("#figure").textContent =
-      "Welcome back, you've been here for " +
+      "You've been here for " +
       localStorage.visits +
       " times now👀";
     localStorage.visits = Number(localStorage.visits) + 1;
@@ -85,7 +85,7 @@ function setCookie(cname,cvalue,exdays) {
   
     if (user.visited)
     {
-      alert( "Welcome again " + user.username + " Your Last visit was  at " +  new Date(user.visitedOn).toTimeString() );
+      document.querySelector('#time').textContent= "Welcome again " + user.username + " Your Last visit was  at " +  new Date(user.visitedOn).toTimeString() ;
       setCookie("username",user.username,365); 
 
     }
