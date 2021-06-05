@@ -54,11 +54,41 @@
     }
   }
   */
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const iDatum = new Date();
+  const st = document.lastModified;
+  const tagNamen= days[iDatum.getDay()];
+  const monatNamen = months[iDatum.getMonth()];
+  const jahr = iDatum.getFullYear();
+  
+  window.localStorage.date = `${iDatum.getDate()} ${tagNamen} ${jahr}`;
  // One day Time in ms (milliseconds)
  const one_day = 1000 * 60 * 60 * 24;
   
  // To set present_dates to two variables
- const visit_date =  parseInt(localStorage.getItem("visitDateLog"));
+ const visit_date =  localStorage.date;
    
  // 0-11 is Month in JavaScript
  const present_day = new Date() ;
