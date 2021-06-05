@@ -47,8 +47,57 @@ const besuchsdauer = Math.round(iDatum.getTime() - ersterbesuch.getTime()) / ein
 const tagSeit = besuchsdauer.toFixed(0);
 let botschaft = 0;
 if (tagSeit <= 1) {
-  botschaft = "You Visited Sunshine View🌅 Today ";
+  botschaft = "You Visited Sunshine View 🌅 Today ";
 } else {
   botschaft = tagSeit;
 }
 document.querySelector("#day").textContent = botschaft;
+
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    cvalue = JSON.stringify({username:cvalue,visited:true,visitedOn:d.getTime()});
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+ "=" + cvalue +"; " + expires;
+    
+  }
+  
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt (0)==' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          var c = c.substring(name.length, c.length);
+          return JSON.parse(c);
+  
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie(){
+    var user = getCookie("username");
+  
+    if (user.visited)
+    {
+      alert( "Welcome again " + user.username + " Your Last visit was  " +  new Date(user.visitedOn).toTimeString() );
+      setCookie("username",user.username,365); 
+
+    }
+    else
+    {
+      username=prompt("Please enter your name:","");
+      if (username != null && username != "")
+      {
+          setCookie("username",username,365);
+  
+      }
+    }
+  }
+  
+  checkCookie();

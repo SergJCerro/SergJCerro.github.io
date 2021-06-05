@@ -145,8 +145,10 @@ figure img {
   min-height: 50px;
 }
 #display{
-  background-color: #a3c7d9;
-  color: #041a4d;
+  background-color: #fcd224;
+  margin: auto ;
+  max-width: 500px;
+  color: black;
   padding: 10px;
   font-size: large;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
