@@ -50,7 +50,7 @@
     } else {
       localStorage.visit = 1;
       document.querySelector("#figure").textContent =
-        "This is your first time here! Welcome";
+        "This is your first time here! Welcome 🎉";
     }
   }
  
@@ -63,7 +63,7 @@
       const tagSeit = besuchsdauer / einTagen ;
       let botschaft = 0;
       if (tagSeit <= 1){ 
-        botschaft = "You Visited Sunshine View Today ";
+        botschaft = "You Visited Sunshine View🌅 Today ";
       } else {
        botschaft = tagSeit.toFixed(0);
       }
