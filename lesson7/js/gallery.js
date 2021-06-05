@@ -58,14 +58,14 @@
  const one_day = 1000 * 60 * 60 * 24;
   
  // To set present_dates to two variables
- const visit_date = localStorage.getItem("visitDateLog");
+ const visit_date = localStorage.Date;
    
  // 0-11 is Month in JavaScript
  const present_day = new Date() ;
    
    
  // To Calculate the result in milliseconds and then converting into days
- const Result = Math.round(present_day.getTime() - present_day.getTime()) / (one_day);
+ const Result = Math.round(visit_date - present_day.getTime()) / (one_day);
    
  const Final_Result = Result.toFixed(0);
    
