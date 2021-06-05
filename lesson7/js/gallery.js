@@ -21,18 +21,18 @@
     "November",
     "December",
   ];
-  
+
   const iDatum = new Date(); 
   
   if (typeof Storage !== "undefined") {
-    if (localStorage.visit) {
+    if (localStorage.visits) {
       document.querySelector("#figure").textContent =
         "Welcome back, you've been here " +
-        localStorage.visit +
-        " times before.";
-      localStorage.visit = Number(localStorage.visit) + 1;
+        localStorage.visits +
+        " times before 👀";
+      localStorage.visits = Number(localStorage.visits) + 1;
     } else {
-      localStorage.visit = 1;
+      localStorage.visits = 1;
       document.querySelector("#figure").textContent =
         "This is your first time here! Welcome 🎉";
     }
