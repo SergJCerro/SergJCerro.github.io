@@ -144,3 +144,10 @@ figure img {
   min-width: 50px;
   min-height: 50px;
 }
+#display{
+  background-color: #a3c7d9;
+  color: #041a4d;
+  padding: 10px;
+  font-size: large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

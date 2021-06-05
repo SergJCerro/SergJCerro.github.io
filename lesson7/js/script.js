@@ -40,6 +40,10 @@ if (day1[day] == "Friday") {
   document.getElementById("announce").style.display = "none";
 }
 
+
+
+
+
 function change() {
   var time = new Date().getHours();
   var body = document.body;
@@ -77,3 +81,6 @@ function log() {
   console.log("Hello, This Was Created by");
 }
 log();
+
+
+
