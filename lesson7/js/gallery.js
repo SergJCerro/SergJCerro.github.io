@@ -27,9 +27,9 @@ const iDatum = new Date();
 if (typeof Storage !== "undefined") {
   if (localStorage.visits) {
     document.querySelector("#figure").textContent =
-      "Welcome back, you've been here " +
+      "Welcome back, you've been here for " +
       localStorage.visits +
-      " times before 👀";
+      " times now👀";
     localStorage.visits = Number(localStorage.visits) + 1;
   } else {
     localStorage.visits = 1;
@@ -43,7 +43,7 @@ localStorage.setItem("Datum_Besuch", besuchsdatum);
 
 const einTagen = 1000 * 60 * 60 * 24;
 const ersterbesuch = new Date(localStorage.getItem("Datum_Besuch"));
-const besuchsdauer = (iDatum - ersterbesuch) / einTagen;
+const besuchsdauer = Math.round(iDatum.getTime() - ersterbesuch.getTime()) / einTagen;
 const tagSeit = besuchsdauer.toFixed(0);
 let botschaft = 0;
 if (tagSeit <= 1) {
