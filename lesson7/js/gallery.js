@@ -55,13 +55,13 @@
   }
   */
  // One day Time in ms (milliseconds)
- const one_day = 1000 * 60 * 60 * 24
+ const one_day = 1000 * 60 * 60 * 24;
   
  // To set present_dates to two variables
  const visit_date = localStorage.Date;
    
  // 0-11 is Month in JavaScript
- const present_day = new Date()
+ const present_day = new Date() ;
    
    
  // To Calculate the result in milliseconds and then converting into days
