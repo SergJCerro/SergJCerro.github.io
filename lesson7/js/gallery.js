@@ -21,25 +21,9 @@
     "November",
     "December",
   ];
-  const iDatum = new Date();
-  const st = document.lastModified;
-  const tagNamen= days[iDatum.getDay()];
-  const monatNamen = months[iDatum.getMonth()];
-  const jahr = iDatum.getFullYear();
   
-  /* window.localStorage.date = `${iDatum.getDate()} ${tagNamen} ${jahr}`; 
-  var datumein = localStorage.date;
-  var datumzwei = new Date();
+  const iDatum = new Date(); 
   
-  var einsTagen = 1000 * 60 * 60 * 24;
-  //var date1 = new Date(datumein);
-  //var date2 = new Date(datumzwei);
-  var subtraction = datumein - datumzwei;
-  var result = Math.round(subtraction / einsTagen );
-  document.querySelector('#figure').textContent = `Days Since Last Visit  ${result} days.`; 
-  console.log(result);*/
-  
-
   if (typeof Storage !== "undefined") {
     if (localStorage.visit) {
       document.querySelector("#figure").textContent =
