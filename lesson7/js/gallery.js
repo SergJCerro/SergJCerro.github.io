@@ -1,4 +1,4 @@
-const day1 = [
+ const days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -7,7 +7,7 @@ const day1 = [
     "Friday",
     "Saturday",
   ];
-  const month1 = [
+  const months = [
     "January",
     "February",
     "March",
@@ -21,26 +21,25 @@ const day1 = [
     "November",
     "December",
   ];
-  var d = new Date();
-  var day = d.getDay();
-  var date = d.getDate();
-  var month = d.getMonth();
-  var year = d.getFullYear();
-  var dateStr = day1[day] + ", " + date + " " + month1[month] + " " ;
-  document.querySelector("#Year").textContent = year;
-  document.querySelector("#LastUpdate").textContent = dateStr;
-  if (day1[day] == "Friday") {
-    document.getElementById("announce").innerHTML =
-      "Saturday = Preston Pancakes 🥞 in the Park!🏞️  9:00 a.m. Saturday at the city park pavilion.";
-    document.getElementById("announce").style.display = "block";
-  } else if (day1[day] == "Saturday"){
-    document.getElementById("announce").textContent = 
-    "Preston Pancakes 🥞 in the Park!🏞️  9:00 a.m. Today At City Park Pavilion"
-  } else {
-    document.getElementById("announce").style.display = "none";
-  }
+  const iDatum = new Date();
+  const st = document.lastModified;
+  const tagNamen= days[iDatum.getDay()];
+  const monatNamen = months[iDatum.getMonth()];
+  const jahr = iDatum.getFullYear();
   
   
+  window.localStorage.date = `${iDatum.getDate()} ${tagNamen} ${jahr}`; 
+  const datumein = localStorage.date;
+  const datumzwei = new Date();
+  
+  const einsTagen = 1000 * 60 * 60 * 24;
+  const date1 = new Date(datumein);
+  const date2 = new Date(datumzwei);
+  const subtraction = date1.getTime() - date2.getTime();
+  const result = Math.round(subtraction / einsTagen);
+  document.querySelector('#figure').textContent = `Days Since Last Visit  ${result} days.`; 
+  
+
   if (typeof Storage !== "undefined") {
     if (localStorage.visits) {
       document.querySelector("#day").textContent =
@@ -54,15 +53,3 @@ const day1 = [
         "This is your first time here! Welcome.";
     }
   }
-  
-  window.localStorage.date = `${d.getDate} ${month} ${year}`; 
-  const datumein = localStorage.date;
-  const datumzwei = new Date();
-  
-  const einsTagen = 1000 * 60 * 60 * 24;
-  const date1 = new Date(datumein);
-  const date2 = new Date(datumzwei);
-  const subtraction = date1.getTime() - date2.getTime();
-  const result = Math.round(subtraction / einsTagen);
-  document.querySelector('#figure').textContent = `Days Since Last Visit  ${result} days.`; 
-  
