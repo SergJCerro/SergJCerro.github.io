@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Sunshine View Where the news is as fresh as the bright blue sky "
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-   <!-- <script type = "text/javascript">
+  </head>
+  <body>
+    <!--
+    <script type = "text/javascript">
 
     
         
@@ -60,7 +65,7 @@
         if (mins < 10) {mins = "0"+ mins}
         var secs = now.getSeconds();
         if (secs < 10) {secs = "0" + secs}
-        var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+        var dispDate =  dy ;
         document.write(lastvisit.subsequentvisitmsg.replace("\[displaydate\]", dispDate))
         }
         
@@ -71,29 +76,74 @@
         lastvisit.showmessage();
         
         </script> -->
-        <div id="display" style="background-color: aqua; font-size: 30px;"></div>
-<script type = "text/javascript" >
-  
-    // One day Time in ms (milliseconds)
-    const one_day = 1000 * 60 * 60 * 24
-  
-// To set present_dates to two variables
-const visit_date = localStorage.Date;
-  
-// 0-11 is Month in JavaScript
-const present_day = new Date()
-  
-  
-// To Calculate the result in milliseconds and then converting into days
-const Result = Math.round(present_day.getTime() - present_day.getTime()) / (one_day);
-  
-const Final_Result = Result.toFixed(0);
-  
-//To display the final_result value
-document.querySelector('#display').textContent="Your Last Visit was " 
-                
-               + Final_Result +" Days ago";
-  
-</script>
-</body>
+    <div id="display" style="background-color: aqua; font-size: 30px"></div>
+   <!-- <script type = "text/javascript" >
+
+        // One day Time in ms (milliseconds)
+        var one_day = 1000 * 60 * 60 * 24
+    
+    // To set present_dates to two variables
+    var present_date = new Date();
+    
+    // 0-11 is Month in JavaScript
+    var christmas_day = new Date(present_date.getFullYear(), 11, 25)
+    
+    // To Calculate next year's Christmas if passed already.
+    if (present_date.getMonth() == 11 && present_date.getdate() > 25)
+        christmas_day.setFullYear(christmas_day.getFullYear() + 1)
+    
+    // To Calculate the result in milliseconds and then converting into days
+    var Result = Math.round(christmas_day.getTime() - present_date.getTime()) / (one_day);
+    
+    // To remove the decimals from the (Result) resulting days value
+    var Final_Result = Result.toFixed(0);
+    
+    //To display the final_result value
+    document.write("Your Last Visit " + Final_Result + " Days");
+    
+    </script> -->
+    <script>
+        
+      const besuchsdatum = iDatum;
+      localStorage.setItem("Datum_Besuch", besuchsdatum);
+    
+      const einTagen = 1000 * 60 * 60 *24;
+      const ersterbesuch = new Date(localStorage.getItem("Datum_Besuch"));
+      const besuchsdauer  = date - ersterbesuch; 
+      const daySince = besuchsdauer / einTagen ;//divide by 1000/60/60/24, then round
+      let message = 0;
+      if (daySince <= 1){ //Check to make sure that it was at least one day ago.
+        message = "today, silly! 🤪";
+      } else {
+       message = daySince.toFixed;
+      }
+      document.querySelector("#display").innerHTML = message;
+    </script>
+    
+    <!--<script>
+      const one_day = 1000 * 60 * 60 * 24;
+
+      const visit_date = localStorage.Date;
+
+      const present_day = new Date();
+
+      const Result =
+        Math.round(present_day.getTime() - present_day.getTime()) / one_day;
+      const Final_Result = Result.toFixed(0);
+      document.querySelector("#display").textContent =
+        "Your Last Visit was " + Final_Result + " Days ago";
+    </script>-->
+
+    <!--<script>
+    let today = new Date();
+let yesterday = new Date();
+
+yesterday.setDate(today.getDate() - 1);
+
+console.log('Today: ' + today);
+console.log('Yesterday: ' + yesterday);
+</script>-->
+
+    <script></script>
+  </body>
 </html>
