@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script type = "text/javascript">
+
+    
+        
+        var days = 730; // days until cookie expires = 2 years.
+        var lastvisit=new Object();
+        var firstvisitmsg="This is your first visit to this page. Welcome!"; 
+        lastvisit.subsequentvisitmsg="Welcome back visitor! Your last visit was on <b>[displaydate]</b>";
+        
+        lastvisit.getCookie=function(Name){ 
+        var re=new RegExp(Name+"=[^;]+", "i"); 
+        if (document.cookie.match(re)) 
+        return document.cookie.match(re)[0].split("=")[1];
+        return''; 
+        }
+        
+        lastvisit.setCookie=function(name, value, days){ 
+        var expireDate = new Date();
+        
+        var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+        document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+        }
+        
+        lastvisit.showmessage = function() {
+        var wh = new Date();
+        if (lastvisit.getCookie("visitc") == "") { 
+        lastvisit.setCookie("visitc", wh, days); 
+        document.write(firstvisitmsg);
+        }
+        
+        else {
+        var lv = lastvisit.getCookie("visitc");
+        var lvp = Date.parse(lv);
+        var now = new Date();
+        now.setTime(lvp);
+        var day = new Array("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat");
+        var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+        var dd = now.getDate();
+        var dy = now.getDay();
+        dy = day[dy];
+        var mn = now.getMonth();
+        mn = month[mn];
+        yy = now.getFullYear();
+        var hh = now.getHours();
+        var ampm = "AM";
+        if (hh >= 12) {ampm = "PM"}
+        if (hh >12){hh = hh - 12};
+        if (hh == 0) {hh = 12}
+        if (hh < 10) {hh = "0" + hh};
+        var mins = now.getMinutes();
+        if (mins < 10) {mins = "0"+ mins}
+        var secs = now.getSeconds();
+        if (secs < 10) {secs = "0" + secs}
+        var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+        document.write(lastvisit.subsequentvisitmsg.replace("\[displaydate\]", dispDate))
+        }
+        
+        lastvisit.setCookie("visitc", wh, days);
+        
+        }
+        
+        lastvisit.showmessage();
+        
+        </script> -->
+        <div id="display" style="background-color: aqua; font-size: 30px;"></div>
+<script type = "text/javascript" >
+  
+    // One day Time in ms (milliseconds)
+    const one_day = 1000 * 60 * 60 * 24
+  
+// To set present_dates to two variables
+const visit_date = localStorage.Date;
+  
+// 0-11 is Month in JavaScript
+const present_day = new Date()
+  
+  
+// To Calculate the result in milliseconds and then converting into days
+const Result = Math.round(present_day.getTime() - present_day.getTime()) / (one_day);
+  
+const Final_Result = Result.toFixed(0);
+  
+//To display the final_result value
+document.querySelector('#display').textContent="Your Last Visit was " 
+                
+               + Final_Result +" Days ago";
+  
+</script>
+</body>
+</html>
