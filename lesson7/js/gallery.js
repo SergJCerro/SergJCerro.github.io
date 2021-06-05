@@ -47,7 +47,7 @@ const besuchsdauer = Math.round(iDatum.getTime() - ersterbesuch.getTime()) / ein
 const tagSeit = besuchsdauer.toFixed(0);
 let botschaft = 0;
 if (tagSeit <= 1) {
-  botschaft = "You Visited Sunshine View 🌅 Today ";
+  botschaft = "Thank You For Visiting Sunshine View 🌅 Today ";
 } else {
   botschaft = tagSeit;
 }
