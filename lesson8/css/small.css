@@ -1,9 +1,10 @@
 body {
-    text-align: center;
+    
+    background-color: #d5e0e6;
   }
   main {
-    background-color: #d5e0e6;
-    text-align: center;
+    
+   
     padding: 0.7em;
   }
   .main {
