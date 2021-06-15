@@ -1,0 +1,40 @@
+@media only screen and (min-width:  38.75em) and (max-width : 74em){
+  nav {
+    margin: 0 auto;
+    background-color: #a3c7d9;
+    color: black;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  ul a{
+    font-size: 1.3em;
+  }
+  #announce {
+    height: 25px;
+    padding: 20px;
+  }
+  
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  .cards section:nth-child(odd) #details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
