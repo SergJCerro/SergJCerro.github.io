@@ -41,12 +41,12 @@
     margin: 0 auto;
   }
   #Hero img {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     height: auto;
   }
   .cards section {
     display: block;
-    width: 350px;
+    width: 400px;
   }
 }
