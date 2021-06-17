@@ -61,8 +61,9 @@ fetch(requestURL)
 .then(function (response) {
    return response.json();
 })
+
 .then(function (jsonObject) {
-   //console.table(jsonObject);  // temporary checking for valid response and data parsing
+   console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
    towns.sort((a,b) => (a.averageRainfall > b.averageRainfall) ? 1 : ((b.averageRainfall > a.averageRainfall) ? -1 : 0));
    towns.reverse();
