@@ -92,6 +92,6 @@ function log() {
       ""
     )
   );
-  console.log("Hello, This Was Created by");
+
 }
 log();
