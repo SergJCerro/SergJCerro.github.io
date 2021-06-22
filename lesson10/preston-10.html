@@ -47,7 +47,7 @@
           <source media="(min-width:640px) and (max-width:1199px)" srcset="images/hero_medium.jpg">
           <source srcset="images/hero_small.jpg" media="(max-width:639px)">
           <img
-            src="images/hero_larg.jpg"
+            src="images/idaho.jpg"
             alt="Idaho_mountains"
             class="ImgRes"
             width="300"
@@ -56,11 +56,12 @@
           </picture>
           <section class="summary">
             <h3>Weather Summary</h3>
-            <p>Currently: Sunny</p>
-            <p>High:<span id="temperature">8</span> °F</p>
+            <p>Currently: <span id="currently"></span> </p>
+            <p>High:<span id="temp"></span> °F</p>
+            
             <p>Windchill:<span id="windchill"> </span> °F</p>
-            <p>Humidity: 40%</p>
-            <p>Wind Speed:<span id="windspeed">10</span></p>
+            <p>Humidity: <span id="humidity"></span> </p>
+            <p>Wind Speed:<span id="windspeed">10</span> Mph</p>
           </section>
         </div>
         <div class="forecastdiv">
@@ -68,64 +69,64 @@
           <table id="fiveDay">
             <thead>
               <tr id="forecastDay">
-                <th>Mon</th>
-                <th>Tues</th>
-                <th>Wed</th>
-                <th class="four">Thurs</th>
-                <th class="five">Fri</th>
+                <th> <div id="day1"></div></th>
+                <th><div id="day2"></div></th>
+                <th><div id="day3"></div></th>
+                <th class="four"><div id="day4"></div></th>
+                <th class="five"><div id="day5"></div></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
                   <img
-                    src="images/SunnySmile.png"
-                    alt=""
+                    src="#"
+                    alt="" id="img1"
                     width="300"
                     height="300"
                   />
                   <br />
-                  <span id="degrees1">80 °F</span>
+                  <span id="temp1"></span>
                 </td>
                 <td>
                   <img
-                    src="images/SunnyCLoudy.png"
-                    alt=""
+                    src="#"
+                    alt="" id="img2"
                     width="300"
                     height="300"
                   />
                   <br />
-                  <span id="degrees2">75 °F</span>
+                  <span id="temp2"></span>
                 </td>
                 <td>
                   <img
-                    src="images/EvilStrom.png"
-                    alt=""
+                    src="#"
+                    alt="" id="img3"
                     width="300"
                     height="300"
                   />
                   <br />
-                  <span id="degrees3">70 °F</span>
+                  <span id="temp3"></span>
                 </td>
                 <td class="four">
                   <img
-                    src="images/CloudySmile.png"
-                    alt=""
+                    src="#"
+                    alt="" id="img4"
                     width="300"
                     height="300"
                   />
                   <br />
-                  <span id="degrees4">74 °F</span>
+                  <span id="temp4"></span>
                 </td>
                 <td class="five">
                   <img
-                    src="images/SadSnow.png"
-                    alt=""
+                    src="#"
+                    alt="" id="img5"
                     width="300"
                     height="300"
                   />
                   <br />
-                  <span id="degrees5">75 °F</span>
+                  <span id="temp5"></span>
                 </td>
               </tr>
             </tbody>
