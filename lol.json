@@ -1,64 +1,64 @@
 {
-  "students": {
-    "0": {
+  "students": [
+    {
       "name": "Michelle",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffloral-design.png?v=1624498528151"
     },
-    "1": {
+    {
       "name": "Yenderson",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "2": {
+    {
       "name": "Ismer",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "3": {
+    {
       "name": "Elver",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "4": {
+    {
       "name": "Fernando",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "5": {
+    {
       "name": "Gabriela",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Fflowers.png?v=1624498500607"
     },
-    "6": {
+    {
       "name": "Silvia",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Fflowers.png?v=1624498500607"
     },
-    "7": {
+    {
       "name": "Eduardo",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "8": {
+    {
       "name": "Aldair",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     },
-    "9": {
+    {
       "name": "Sara",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Fflowers.png?v=1624498500607"
     },
-    "10": {
+    {
       "name": "Erika",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Flion.png?v=1624500208767"
     },
-    "11": {
+    {
       "name": "Rosa ",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Frose.png?v=1624500292157"
     },
-    "12": {
+    {
       "name": "Fitge",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Fflowers.png?v=1624498500607"
     },
-    "13": {
+    {
       "name": "Kiomy",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Fflowers.png?v=1624498500607"
     },
-    "14": {
+    {
       "name": "Helaman",
       "imageurl": "https://cdn.glitch.com/a13cbb1b-ca0c-4939-9b1b-49ca32719b21%2Ffight.png?v=1624498954862"
     }
-  }
+  ]
 }
