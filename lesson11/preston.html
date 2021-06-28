@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Sunshine View Where the news is as fresh as the bright blue sky " />
+    <meta
+      name="description"
+      content="Sunshine View Where the news is as fresh as the bright blue sky "
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="images/moon.png" />
@@ -11,17 +14,22 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    
 
     <title>Preston Town Page</title>
   </head>
   <body>
     <div id="announce" style="display: block"></div>
     <header>
-      <picture>
-          <a href="../lesson9/index.html">
-        <img src="images/suns.png" alt="suns_logo_Home" width="300" height="300" /> </a>
-      </picture>
+      <a href="../lesson9/index.html">
+        <picture>
+          <img
+            src="images/suns.png"
+            alt="suns_logo_Home"
+            width="300"
+            height="300"
+          />
+        </picture>
+      </a>
       <section class="heading">
         <h1>Sunshine View</h1>
         <div class="motto">
@@ -41,25 +49,28 @@
       </ul>
     </nav>
     <main>
-      <h2 style="color: black;">Preston</h2>
+      <h2 style="color: black">Preston</h2>
       <div class="main">
         <div class="headdiv">
           <picture>
-     <source media="(min-width:640px) and (max-width:1199px)" srcset="images/idaho_700.jpg">
-          <source srcset="images/idaho_400.jpg" media="(max-width:639px)">
-          <img
-            src="images/idaho_1000.jpg"
-            alt="Idaho_mountains"
-            class="ImgRes"
-            width="300"
-            height="300"
-          />
+            <source
+              media="(min-width:640px) and (max-width:1199px)"
+              srcset="images/idaho_700.jpg"
+            />
+            <source srcset="images/idaho_400.jpg" media="(max-width:639px)" />
+            <img
+              src="images/idaho_1000.jpg"
+              alt="Idaho_mountains"
+              class="ImgRes"
+              width="300"
+              height="300"
+            />
           </picture>
           <section class="summary">
             <h3>Weather Summary</h3>
-            <p>Currently: <span id="currently"></span> </p>
+            <p>Currently: <span id="currently"></span></p>
             <p>High:<span id="temp"></span> °F</p>
-            
+
             <p>Windchill:<span id="windchill"> </span> °F</p>
             <p>Humidity: <span id="humidity"></span> %</p>
             <p>Wind Speed:<span id="windspeed">10</span> Mph</p>
@@ -70,7 +81,7 @@
           <table id="fiveDay">
             <thead>
               <tr id="forecastDay">
-                <th> <div id="day1"></div></th>
+                <th><div id="day1"></div></th>
                 <th><div id="day2"></div></th>
                 <th><div id="day3"></div></th>
                 <th class="four"><div id="day4"></div></th>
@@ -80,64 +91,38 @@
             <tbody>
               <tr>
                 <td>
-                  <img
-                    src="#"
-                    alt="" id="img1"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="#" alt="" id="img1" width="300" height="300" />
                   <br />
                   <span id="temp1"></span>
                 </td>
                 <td>
-                  <img
-                    src="#"
-                    alt="" id="img2"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="#" alt="" id="img2" width="300" height="300" />
                   <br />
                   <span id="temp2"></span>
                 </td>
                 <td>
-                  <img
-                    src="#"
-                    alt="" id="img3"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="#" alt="" id="img3" width="300" height="300" />
                   <br />
                   <span id="temp3"></span>
                 </td>
                 <td class="four">
-                  <img
-                    src="#"
-                    alt="" id="img4"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="#" alt="" id="img4" width="300" height="300" />
                   <br />
                   <span id="temp4"></span>
                 </td>
                 <td class="five">
-                  <img
-                    src="#"
-                    alt="" id="img5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="#" alt="" id="img5" width="300" height="300" />
                   <br />
                   <span id="temp5"></span>
                 </td>
               </tr>
             </tbody>
           </table>
-    
         </div>
         <section class="townEvents">
-            <h3>Upcoming Town Events</h3>
-            <hr>
-          </section>
+          <h3>Upcoming Town Events</h3>
+          <hr />
+        </section>
         <div class="articlediv">
           <img
             id="article_img"
@@ -177,7 +162,7 @@
             width="300"
             height="300"
             class="map"
-          /><br>
+          /><br />
           <div class="contact_info">
             <h4>Contact Information</h4>
             <h3>1234 Storm Avenue</h3>
@@ -204,12 +189,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
-  google: {
-    families: [
-       'Dancing Script' , 'EB Garmond'
-    ]
-  }
-});
+        google: {
+          families: ["Dancing Script", "EB Garmond"],
+        },
+      });
     </script>
   </body>
 </html>
