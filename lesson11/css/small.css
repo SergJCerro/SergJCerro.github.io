@@ -148,13 +148,14 @@ tbody img {
   height: auto;
 }
 .articlediv {
+  text-align: left;
   display: block;
   margin-top: 15px;
   padding: 10px;
   border: 1px solid #000;
 }
 .articlediv img {
-  max-width: 300px;
+  max-width:250px;
   width: 100%;
   height: auto;
 
