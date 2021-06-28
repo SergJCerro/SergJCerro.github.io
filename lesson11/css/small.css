@@ -204,7 +204,23 @@ footer {
 footer a {
   color: black;
 }
+.townEvents, .townEvent {
+  border: 2px solid #000;
+  box-shadow: 5px 5px #041a4d;
+  margin: 15px auto;
+  text-align: center;
+  width: 50%;
+}
 
+.townEvents p , .townEvent p{
+  color: #041a4d;
+}
+.townEvents hr , .townEvent hr{
+  background-color: #05386b;
+  color: #05386b;
+  height: 1.5px;
+  width: 85%;
+}
 
 /*--cyber-yellow: hsla(48, 98%, 57%, 1);
 --cyan-process: hsla(199, 84%, 57%, 1);

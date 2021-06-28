@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Sunshine View Where the news is as fresh as the bright blue sky " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/moon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    
+
+    <title>Soda Springs</title>
+  </head>
+  <body>
+    <div id="announce" style="display: block"></div>
+    <header>
+      <picture>
+          <a href="../lesson9/index.html">
+        <img src="images/suns.png" alt="suns_logo_Home" width="300" height="300" /> </a>
+      </picture>
+      <section class="heading">
+        <h1>Sunshine View</h1>
+        <div class="motto">
+          "The Pathway can become Bright if theres <i> Sunshine </i> "
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li><a href="#" onclick="Menu()">&#9776; Menu</a></li>
+        <li><a href="../lesson9/index.html">Home</a></li>
+        <li><a href="/lesson11/preston.html">Preston</a></li>
+        <li  class="active"><a href="/lesson11/sodaspring.html">Soda Springs</a></li>
+        <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson7/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 style="color: black;">Soda Springs</h2>
+      <div class="main">
+        <div class="headdiv">
+          <picture>
+     <source media="(min-width:640px) and (max-width:1199px)" srcset="images/sodaspring_700.jpg">
+          <source srcset="images/sodaspring_400.jpg" media="(max-width:639px)">
+          <img
+            src="images/sodaspring_1000.jpg"
+            alt="Idaho_mountains"
+            class="ImgRes"
+            width="300"
+            height="300"
+          />
+          </picture>
+          <section class="summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="currently"></span> </p>
+            <p>High:<span id="temp"></span> °F</p>
+            
+            <p>Windchill:<span id="windchill"> </span> °F</p>
+            <p>Humidity: <span id="humidity"></span> %</p>
+            <p>Wind Speed:<span id="windspeed">10</span> Mph</p>
+          </section>
+        </div>
+        <div class="forecastdiv">
+          <h3>5 Day Forecast</h3>
+          <table id="fiveDay">
+            <thead>
+              <tr id="forecastDay">
+                <th> <div id="day1"></div></th>
+                <th><div id="day2"></div></th>
+                <th><div id="day3"></div></th>
+                <th class="four"><div id="day4"></div></th>
+                <th class="five"><div id="day5"></div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="#"
+                    alt="" id="img1"
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="temp1"></span>
+                </td>
+                <td>
+                  <img
+                    src="#"
+                    alt="" id="img2"
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="temp2"></span>
+                </td>
+                <td>
+                  <img
+                    src="#"
+                    alt="" id="img3"
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="temp3"></span>
+                </td>
+                <td class="four">
+                  <img
+                    src="#"
+                    alt="" id="img4"
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="temp4"></span>
+                </td>
+                <td class="five">
+                  <img
+                    src="#"
+                    alt="" id="img5"
+                    width="300"
+                    height="300"
+                  />
+                  <br />
+                  <span id="temp5"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    
+        </div>
+        <section class="townEvents">
+            <h3>Upcoming Town Events</h3>
+            <hr>
+          </section>
+        <div class="articlediv">
+          <img
+            id="article_img"
+            src="images/lake_mountain.gif"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <h3>Articles</h3>
+          <h4>By Mike Kieffer</h4>
+          <p>
+            Lake Mountain is a Mountain Range that is located in the northern
+            end of Utah County. To its east, it is bordered by Saratoga Springs
+            and Utah lake. To its West, it is boarded by Eagle Mountain and the
+            Cedar Valley. “The range is arc-shaped, curved to the east. The Lake
+            Mountains have no prominent peaks, but a central ridgeline, about 5
+            miles (8.0 km) long, that trends slightly north-northwest by
+            south-southeast. The highest point in the range is an unnamed peak,
+            with an elevation of 7,690 feet (2,340 m). There are seventeen named
+            canyons on the east side of the range, running toward Utah Lake:
+            Long, Pfieffer, Burnt (southern), Chaparral, Miners, Potter, Enoch,
+            Seep, Little, Olaf, Limekiln, Losee, Clark, Israel, Lott, Burnt
+            (northern), and Reformation canyons (from south to north), with
+            Limekiln Canyon being in the approximate center. The west side has
+            much fewer named canyons, running toward Cedar Valley: Mercer,
+            Ivans, Wildcat, and Wiley (from south to north), with Wiley Canyon
+            being in the approximate center.” [Source] Israel and Hidden Hollow
+            on the north end of the range are where a lot of Eagle Mountain and
+            Saratoga Springs residents enjoy the outdoors. The mountain range
+            also has some well-used mountain biking paths.
+          </p>
+        </div>
+        <div class="contactdiv">
+          <img
+            src="images/map.png"
+            alt="map"
+            width="300"
+            height="300"
+            class="map"
+          /><br>
+          <div class="contact_info">
+            <h4>Contact Information</h4>
+            <h3>1234 Storm Avenue</h3>
+            <h3>Preston, Idaho 83707</h3>
+            <h3>986-222-1234</h3>
+            <h3>contact@Sunshineview.net</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="outer">
+        <p class="up">
+          &#169;<span id="Year"></span> Sergio J Cerritos | Belize |
+          <a href="https://www.byui.edu/online" target="_blank" rel="noopener">
+            BYUI Online Learning</a
+          >
+        </p>
+        <p class="date">Last Modified : <span id="LastUpdate"></span></p>
+      </div>
+    </footer>
+    <script src="js/sodasprings.js"></script>
+    <script src="js/windchil.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+  google: {
+    families: [
+       'Dancing Script' , 'EB Garmond'
+    ]
+  }
+});
+    </script>
+  </body>
+</html>
