@@ -1,0 +1,27 @@
+@media only screen and (min-width: 40em){
+    .top-nav li {
+        margin: 0 10px;
+      }
+      .top-nav .menu {
+        width: auto;
+        max-height: none;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+      }
+      .top-nav .menu-icon {
+        display: none;
+      }
+      section{
+        margin-top: -250px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        background-image: url("/lesson12/images/5333978.jpg ");
+        width: 100%;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,134 @@
+.top-nav {
+	position: fixed;
+	width: 100%;
+	padding: 10px 10px 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	transition: top .75s ease-in;
+	background-color: #e8e8e8;
+
+	.menu{
+		list-style: none;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+
+		li a{
+			display: inline-block;
+			min-width: 75px;
+			margin: .3em 0;
+			padding: 0 10px;
+			transition: 1s all;
+			text-decoration: none;
+			font-size: 20px;
+
+			&:link, &:visited{
+				color: #0d0d0d;
+			}
+
+			&:focus, &:hover, &:active{
+				transform: scale(1.1) rotate(-2deg);
+				color: #20232d
+			}
+		}
+	}
+
+	.logo{
+		display: inline-block;
+		width: 150px;
+	}
+
+	.menu-icon{
+		cursor: pointer;
+		display: inline-block;
+		padding: 28px 20px;
+
+		.navicon{
+			background: #20232d;
+			display: block;
+			height: 2px;
+			position: relative;
+			width: 1.625rem;
+
+			&:before, &:after{
+				background: #20232d;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+			}
+
+			&:before{
+				top: 7px;
+			}
+
+			&:after{
+				top: -7px;
+			}
+		}
+	}
+
+	.menu-btn{
+		display: none;
+
+		&:checked ~ .menu{
+			max-height: 300px;
+		}
+
+		&:checked ~ .menu-icon .navicon{
+			background: transparent;
+
+			&:before{
+				transform: rotate(-45deg);
+			}
+
+			&:after{
+				transform: rotate(45deg);
+			}
+		}
+
+		&:checked ~ .menu-icon:not(.steps) .navicon{
+			&:before, &:after{
+				top: 0;
+			}
+		}
+	}
+}
+// DESKTOP MENU CSS
+  @media (min-width: 840px) {
+		.top-nav li {
+			margin: 0 10px;
+		}
+		.top-nav .menu {
+			width: auto;
+			max-height: none;
+			flex-direction: row;
+		}
+		.top-nav .menu-icon {
+			display: none;
+		}
+  }
+
+// OTHER STYLES
+*,
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+header{
+	background: linear-gradient(#9f67e8, #7171ea);
+	width: 100%;
+	height: 200vh;
+}

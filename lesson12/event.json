@@ -1,0 +1,19 @@
+{
+    "boise": [ 
+        {
+            "name" : "Breakfast Business Series",
+            "day"  : "9",
+            "month" : "AUG"
+        },
+        {
+            "name" : "Biose Workshop",
+            "day" : "20" , 
+            "month" : "AUG"
+        },
+        {
+            "name" : "Boise Community dat at Bogus Basin",
+            "day": "13",
+            "month" : "SEPT"
+        }
+    ]
+}
