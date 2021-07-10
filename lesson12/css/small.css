@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Upright:wght@300&display=swap');
+*, html {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header,footer{
+    font-family: 'Bree Serif', serif;
+}
+body{
+    font-family: 'Cormorant Upright', serif;
+}
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo{
+    font-size: 20px;
+}
 .top-nav {
     position: fixed;
     width: 100%;
@@ -119,59 +142,4 @@
 
 .top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
-}
-
-*, html {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-header {
-    background-image: url("/lesson12/images/5333978.jpg ");
-    width: 100%;
-    height: 100vh;
-}
-
-/*Section In Header*/
-section{
-    margin-top: -450px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-img {
-    text-align: center;
-}
-
-.trans--grow {
-    -webkit-transition: width 1s ease-out;
-    /* For Safari 3.1 to 6.0 */
-    transition: width 1s ease-out;
-    width: 0%;
-}
-
-.grow {
-    width: 100%;
-}
-
-.hr1 {
-    margin-left: 0;
-}
-
-.hr2 {
-    margin-right: 0;
-}
-
-hr {
-    max-width: 500px;
-    padding: 2px 0;
-    border: none;
-    background-color :#20bf55;
-    background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
-    
-    letter-spacing: 5px;
 }
