@@ -1,0 +1,30 @@
+@media only screen and (min-width: 75rem) {
+  nav {
+    padding: 0.1em;
+  }
+  ul {
+    max-width: 900px;
+    margin-left: 250px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0.05em;
+    display: flex;
+  }
+  ul li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  ul a {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  ul li:first-child {
+    display: none;
+  }
+  #header_top {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 53px;
+    background: #fff;
+  }
+}

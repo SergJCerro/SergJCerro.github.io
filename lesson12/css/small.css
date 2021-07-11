@@ -6,140 +6,207 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header,footer{
+
+header, footer {
     font-family: 'Bree Serif', serif;
 }
-body{
+
+body {
     font-family: 'Cormorant Upright', serif;
 }
+
 body a {
     text-decoration: none;
     color: black;
 }
 
+/*Menu- Nav Bar*/
 
-.logo{
-    font-size: 20px;
-}
-.top-nav {
-    position: fixed;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-transition: top .75s ease-in;
-    transition: top .75s ease-in;
-    background-color: transparent;
+nav {
+    margin: 0 auto;
+    background-color: snow;
+    color: black;
+    padding: 0.69em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
 }
 
-.top-nav .menu {
+nav ul .active {
+    background-color: lightseagreen;
+    border-radius: 1.5em;
+}
+
+ul {
     list-style: none;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    width: 100%;
-    max-height: 0;
-    -webkit-transition: max-height .2s ease-out;
-    transition: max-height .2s ease-out;
+    text-align: center;
+    padding: 0;
 }
 
-.top-nav .menu li a {
-    display: inline-block;
-    min-width: 75px;
-    margin: .3em 0;
-    padding: 0 10px;
-    -webkit-transition: 1s all;
-    transition: 1s all;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.top-nav .menu li a:link, .top-nav .menu li a:visited {
-    color: #0d0d0d;
-}
-
-.top-nav .menu li a:focus, .top-nav .menu li a:hover, .top-nav .menu li a:active {
-    -webkit-transform: scale(1.1) rotate(-2deg);
-    transform: scale(1.1) rotate(-2deg);
-    color: #20232d;
-}
-
-.top-nav .logo {
-    display: inline-block;
-    max-width: 200px;
-}
-
-.top-nav .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-}
-
-.top-nav .menu-icon .navicon {
-    background: #20232d;
+ul li:first-child {
     display: block;
-    height: 2px;
-    position: relative;
-    width: 1.625rem;
 }
 
-.top-nav .menu-icon .navicon:before, .top-nav .menu-icon .navicon:after {
-    background: #20232d;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.top-nav .menu-icon .navicon:before {
-    top: 7px;
-}
-
-.top-nav .menu-icon .navicon:after {
-    top: -7px;
-}
-
-.top-nav .menu-btn {
+ul li {
     display: none;
 }
 
-.top-nav .menu-btn:checked~.menu {
-    max-height: 300px;
+ul a {
+    color: black;
+    display: block;
+    padding: 0.5em;
+    border-radius: 1.5265em;
+    font-weight: 200;
+    font-size: 1.4em;
 }
 
-.top-nav .menu-btn:checked~.menu-icon .navicon {
-    background: transparent;
+ul a:hover {
+    background-color: #4169e1;
 }
 
-.top-nav .menu-btn:checked~.menu-icon .navicon:before {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+.responsive li {
+    display: block;
 }
 
-.top-nav .menu-btn:checked~.menu-icon .navicon:after {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+a {
+    text-decoration: none;
 }
 
-.top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-    top: 0;
+/*Header*/
+
+header picture img {
+    max-width: 400px;
+    width: 100%;
+    margin-top: -5px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    padding: 20px;
+    float: none;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: lightskyblue;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+header input[type=text], header .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+
+header input[type=text] {
+    border: 1px solid #ccc;
+}
+
+#social {
+    float: right;
+    text-align: right;
+    padding: 10px 120px 0 40px;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+#social a {
+    gap: 5px;
+    display: inline-block;
+    margin-left: 8px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 25px;
+    color: #000 solid;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+/*Text Slider */
+
+.text-slider {
+    padding: 15px;
+}
+
+.text-slider h1 {
+    padding: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.mySlides h2 {
+    font: 25px;
+}
+
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }

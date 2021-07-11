@@ -2,52 +2,235 @@
 <html lang="en-us">
 
 <head>
-<base href="https://sergjcerro.github.io./lesson12/index.html">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Belize Chamber of Commerce ">
-    <meta property="og:type" content="website"/>
-	<meta name="keywords" content="Belize Chamber of Commerce " />   
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="Belize Chamber of Commerce " />
     <meta name="author" content="Sergio Cerritos">
+    <meta name="generator" content="Power By Github and Created by Sergio Cerritos">
     <link rel="shortcut icon" href="images/belize.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favico.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BCC</title>
 </head>
 
 <body>
     <header>
-
-        <div class="header">
-            <nav class="top-nav" id="top-nav">
-                <a href="/lesson12/index.html" class="logo"> <span>B.C.C</span></a>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                    <li><a href="#join">Join the Chamber</a></li>
-                    <li><a href="#directory">Members</a></li>
-                    <li><a href="#spon">Sponsors</a></li>
-                    <li><a href="#news">News & Events</a></li>
-                    <li><a href="#about">About Boise</a></li>
-
-                </ul>
-            </nav>
-            
+        <a href="/lesson12/index.html">
+            <picture>
+                <img src="images/belizelogo.png" alt="suns_logo_Home" width="300" height="300" />
+            </picture>
+        </a>
+        <div id="header_top">
+            <div id="social">
+                <a href="#" class="fa fa-facebook facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
     </header>
-    
-</div>
-    <section>
+    <nav>
+        <ul class="nav">
+            <li><a href="#" onclick="Menu()">&#9776;</a></li>
+            <li><a href="#">Join the Chamber</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">About BCC</a></li>
 
-    </section>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Belize Chamber of Commerce</div>
+                                <div class="text">
+                                    <p>Making Dreams Come True</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/workers.jpeg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Belize Chamber of Commerce</div>
+                                <div class="text">
+                                    <p>Achieve More Together</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Join</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/people-stacking-hands-together-park.jpg.crdownload" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Belize Chamber of Commerce</div>
+                                <div class="text">
+                                    <p>Save More</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/holding_card.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Belize Chamber of Commerce</div>
+                                <div class="text">
+                                    <p>Have an Idea? <br> Tell us </p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn-inner">Contact</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/3423488.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="item is-active">
+                        <span class="icon">1</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">2</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">3</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">4</span>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="arrow prev">
+                        <span class="svg svg-arrow-left">
+                            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px"
+                                viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                <path
+                                    d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z" />
+                            </svg>
+                            <span class="alt sr-only"></span>
+                        </span>
+                    </div>
+                    <div class="arrow next">
+                        <span class="svg svg-arrow-right">
+                            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px"
+                                viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                <path
+                                    d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z" />
+                            </svg>
+                            <span class="alt sr-only"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="text-slider">
+            <h1>The Belize Chamber of Commerce</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <h2>From each member to every program and volunteer, in Belize or the region, we are shaping the future of living and doing business here, the place we call home.</h2>
+                    
+                </div>
+
+                <div class="mySlides">
+                    <h2>...brings business and community together to accomplish great things. We are a membership organization with an overarching purpose of speaking out on behalf of business, strengthening the vibrancy of our regional economy and helping businesses grow.</h2>
+   
+                </div>
+
+                <div class="mySlides">
+                    <h2>...is more than a membership organization—it's the synergistic core of our community that inspires people, empowers business, and develops a region.</h2>
+                    
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
+    </main>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
