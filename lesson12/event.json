@@ -4,24 +4,30 @@
             "images" : "images/Updated-Logo.png",
             "name" : "Breakfast Business Series",
             "day"  : "9",
-            "month" : "AUG"
+            "month" : "August"
         },
         {
             "images" : "images/training.jpeg",
             "name" : "BCC Training Workshop",
             "day" : "20" , 
-            "month" : "AUG"
+            "month" : "August"
         },
         {
             "images" : "images/belize-san-.jpeg",
             "name" : "BCC Community date at San Pedro",
             "day": "13",
-            "month" : "SEPT"
+            "month" : "September"
+        },
+        {
+            "images": "images/cheil.jpeg",
+            "name" : "Visit to the Che'il Mayan Chocolate Company",
+            "day" :"26",
+            "month" : "September"
         }
     ],
     "chamber_news": [{
         "name" : "Business Opportunities & Connections",
-        "description" : "The Belize Chamber of Commerce and Industry (BCCI) has a standing promotional agreement with ConnectAmericas which opens up another opportunity for you to connect with other businesses around the world and gain access to many free learning sessions in the format of trainings, meetings, forums, expos and as such. ConnectAmericas is a free business platform",
+        "description" : "The Belize Chamber of Commerce (BCC) has a standing promotional agreement with ConnectAmericas which opens up another opportunity for you to connect with other businesses around the world and gain access to many free learning sessions in the format of trainings, meetings, forums, expos and as such. ConnectAmericas is a free business platform",
         "image" : "images/Connect-Americas.png"
     },
     {

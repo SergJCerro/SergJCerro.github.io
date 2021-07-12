@@ -15,8 +15,6 @@ body {
     font-family: 'Cormorant Upright', serif;
 }
 
-
-
 body a {
     text-decoration: none;
     color: black;
@@ -226,17 +224,52 @@ h3, h4 {
 }
 
 .row {
+    padding: 10px ;
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .column {
     flex: 50%;
-    padding: 10px;
+    gap: 10px;
     height: auto;
+    text-align: center;
+}
+
+.news, .events {
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.news img, .events img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.news p, .events p {
+    font-size: 20px;
+}
+
+.news button, .events button {
+    font-size: large;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 }
 
 /*Weather Section*/
 
 #summary {
+    padding: 10px;
+    text-align: center;
     box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#summary #weather {
+    border: 1px solid;
+    padding: 5px;
 }
