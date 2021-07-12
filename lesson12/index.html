@@ -31,9 +31,9 @@
         </a>
         <div id="header_top">
             <div id="social">
-                <a href="#" class="fa fa-facebook facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="www.facebook.com" class="fa fa-facebook facebook"></a>
+                <a href="www.linkedin.com" class="fa fa-linkedin"></a>
+                <a href="www.whatsapp.com" class="fa fa-whatsapp"></a>
             </div>
         </div>
         <br><br>
@@ -47,6 +47,7 @@
     <nav>
         <ul class="nav">
             <li><a href="#" onclick="Menu()">&#9776;</a></li>
+            <li><a href="#weather">Weather</a></li>
             <li><a href="#">Join the Chamber</a></li>
             <li><a href="#">Businesses</a></li>
             <li><a href="#">Sponsors</a></li>
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/workers.jpeg" alt="" class="image" />
+                            <img src="images/workers.jpeg" alt="workers" class="image" width="1000" height="1000" />
                         </div>
                     </div>
                     <div class="slide">
@@ -88,7 +89,8 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/people-stacking-hands-together-park.jpg.crdownload" alt="" class="image" />
+                            <img src="images/bottom-view-people-putting-hands-together.jpg" alt="" class="image"
+                                width="1000" height="1000" />
                         </div>
                     </div>
                     <div class="slide">
@@ -104,7 +106,8 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/holding_card.jpg" alt="" class="image" />
+                            <img src="images/holding_card.jpg" alt="holding_card" class="image" width="1000"
+                                height="1000" />
                         </div>
                     </div>
                     <div class="slide">
@@ -120,7 +123,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/3423488.jpg" alt="" class="image" />
+                            <img src="images/3423488.jpg" alt="3423488" class="image" width="1000" height="1000" />
                         </div>
                     </div>
                 </div>
@@ -165,24 +168,29 @@
             </div>
         </section>
     </main>
+
     <main>
         <section class="text-slider">
             <h1>The Belize Chamber of Commerce</h1>
             <div class="slideshow-container">
 
                 <div class="mySlides">
-                    <h2>From each member to every program and volunteer, in Belize or the region, we are shaping the future of living and doing business here, the place we call home.</h2>
-                    
+                    <h2>From each member to every program and volunteer, in Belize or the region, we are shaping the
+                        future of living and doing business here, the place we call home.</h2>
+
                 </div>
 
                 <div class="mySlides">
-                    <h2>...brings business and community together to accomplish great things. We are a membership organization with an overarching purpose of speaking out on behalf of business, strengthening the vibrancy of our regional economy and helping businesses grow.</h2>
-   
+                    <h2>...brings business and community together to accomplish great things. We are a membership
+                        organization with an overarching purpose of speaking out on behalf of business, strengthening
+                        the vibrancy of our regional economy and helping businesses grow.</h2>
+
                 </div>
 
                 <div class="mySlides">
-                    <h2>...is more than a membership organization—it's the synergistic core of our community that inspires people, empowers business, and develops a region.</h2>
-                    
+                    <h2>...is more than a membership organization—it's the synergistic core of our community that
+                        inspires people, empowers business, and develops a region.</h2>
+
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -225,12 +233,60 @@
                 }
             </script>
         </section>
+        <div id="news">
+            <div class="row">
+                <div class="column">
+                    <h3>
+                        Chamber News
+                    </h3>
+                    <button type="button"> All News</button>
+                </div>
+                <div class="column">
+                    <h3>Chamber Events</h3>
+                    <button type="button"> All Events</button>
+                </div>
+            </div>
+        </div>
+        <div id="executive">
+            <h4>Executive Members</h4>
+        </div>
+        <section id="summary">
+            <div id="weather">
+                <h4>Weather for Belize</h4>
+                <img src="#" alt="#" id="img" width="50" height="50">
+                <p>Currently : <span id="currently"></span></p>
+                <p>Feels Like : <span id="feels_like"></span> °F</p>
+                <p>Humidity : <span id="humidity"></span>%</p>
+                <p>Temperature : <span id="temperature"></span> °F</p>
+                <p>Wind Speed : <span id="windspeed"></span> m/s</p>
+            </div>
+            <div id="weather">
+                <h4>Weather for Belize City</h4>
+                <img src="#" alt="#" id="img1" width="50" height="50">
+                <p>Currently : <span id="currently1"></span></p>
+                <p>Feels Like : <span id="feels_like1"></span> °F</p>
+                <p>Humidity : <span id="humidity1"></span>%</p>
+                <p>Temperature : <span id="temperature1"></span> °F</p>
+                <p>Wind Speed : <span id="windspeed1"></span> m/s</p>
+            </div>
+            <div id="weather">
+                <h4>Weather for Belize District</h4>
+                <img src="#" alt="#" id="img2" width="50" height="50">
+                <p>Currently : <span id="currently2"></span></p>
+                <p>Feels Like : <span id="feels_like2"></span> °F</p>
+                <p>Humidity : <span id="humidity2"></span>%</p>
+                <p>Temperature : <span id="temperature2"></span> °F</p>
+                <p>Wind Speed : <span id="windspeed2"></span> m/s</p>
+            </div>
+        </section>
+        <button type="button" class="btn">View Weather Forecast</button>
     </main>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

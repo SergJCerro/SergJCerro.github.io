@@ -1,19 +1,36 @@
 {
-    "boise": [ 
+    "Chamber_events": [ 
         {
             "name" : "Breakfast Business Series",
             "day"  : "9",
             "month" : "AUG"
         },
         {
-            "name" : "Biose Workshop",
+            "name" : "BCC Training Workshop",
             "day" : "20" , 
             "month" : "AUG"
         },
         {
-            "name" : "Boise Community dat at Bogus Basin",
+            "name" : "BCC Community date at San Pedro",
             "day": "13",
             "month" : "SEPT"
         }
+    ],
+    "chamber_news": [{
+        "name" : "Business Opportunities & Connections",
+        "description" : "The Belize Chamber of Commerce and Industry (BCCI) has a standing promotional agreement with ConnectAmericas which opens up another opportunity for you to connect with other businesses around the world and gain access to many free learning sessions in the format of trainings, meetings, forums, expos and as such. ConnectAmericas is a free business platform",
+        "image" : "images/Connect-Americas.png"
+    },
+    {
+        "name" : "CFLI Coordinator, BELIZE",
+        "description" : "The High Commission of Canada to Belize (located in Guatemala City) is offering a service contract for the coordination of the Canada Fund for Local Initiatives (CFLI) in Belize. We would appreciate if you could share the announcement below (and attached) with any person that could be interested in applying and who would comply with",
+        "image" : "images/Canada.png"
+    },
+    {
+        "name" : "Data Analytics Bootcamp",
+        "description" : "Data Analytics Bootcamp Warm greetings from the Public-Private Desk (PPD) in the Office of the Prime Minister. The Government of Belize, through the Economic Development Council, and the Inter-American Development Bank (IDB), through the Compete Caribbean Partnership Facility (CCPF) –  which is funded by the United Kingdom’s Foreign, Commonwealth & Development Office, the Caribbean Development",
+        "image" : "images/Booth-Camp.png"
+    }
+
     ]
 }

@@ -15,6 +15,8 @@ body {
     font-family: 'Cormorant Upright', serif;
 }
 
+
+
 body a {
     text-decoration: none;
     color: black;
@@ -115,7 +117,7 @@ header input[type=text] {
 #social {
     float: right;
     text-align: right;
-    padding: 10px 120px 0 40px;
+    padding: 10px 100px 0 40px;
     height: 33px;
     line-height: 33px;
     vertical-align: middle;
@@ -209,4 +211,32 @@ header input[type=text] {
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+/*News and Events Sections*/
+
+#news {
+    text-align: center;
+    vertical-align: middle;
+}
+
+h3, h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: auto;
+}
+
+/*Weather Section*/
+
+#summary {
+    box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

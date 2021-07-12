@@ -27,4 +27,20 @@
     height: 53px;
     background: #fff;
   }
+  #summary{
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #summary div{
+    border: 2px solid;
+  }
+  #summary p{
+    padding: 5px;
+    font-size: 16px;
+  }
+  #summary .btn-v{
+    background-color: aqua
+  }
 }
