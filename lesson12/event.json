@@ -1,16 +1,19 @@
 {
     "Chamber_events": [ 
         {
+            "images" : "images/Updated-Logo.png",
             "name" : "Breakfast Business Series",
             "day"  : "9",
             "month" : "AUG"
         },
         {
+            "images" : "images/training.jpeg",
             "name" : "BCC Training Workshop",
             "day" : "20" , 
             "month" : "AUG"
         },
         {
+            "images" : "images/belize-san-.jpeg",
             "name" : "BCC Community date at San Pedro",
             "day": "13",
             "month" : "SEPT"

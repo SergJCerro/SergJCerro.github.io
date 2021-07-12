@@ -3,7 +3,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=17.4995&lon=
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+      //  console.log(jsObject);
         let main = jsObject.current.weather[0].main;
         document.getElementById('currently1').innerHTML = main.charAt(0).toUpperCase() + main.slice(1);
         document.getElementById('feels_like1').innerHTML = jsObject.current.feels_like;
@@ -18,7 +18,7 @@ const apiURL1 = "https://api.openweathermap.org/data/2.5/onecall?lat=17.25&lon=-
 fetch(apiURL1)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+       // console.log(jsObject);
         let main = jsObject.current.weather[0].main;
         document.getElementById('currently2').innerHTML = main.charAt(0).toUpperCase() + main.slice(1);
         document.getElementById('feels_like2').innerHTML = jsObject.current.feels_like;
@@ -33,7 +33,7 @@ const apiURL2 = "https://api.openweathermap.org/data/2.5/onecall?lat=17.25&lon=-
 fetch(apiURL2)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+       // console.log(jsObject);
         let main = jsObject.current.weather[0].main;
         document.getElementById('currently').innerHTML = main.charAt(0).toUpperCase() + main.slice(1);
         document.getElementById('feels_like').innerHTML = jsObject.current.feels_like;

@@ -35,3 +35,11 @@ window.onload= function () {
      plusSlides(1);
  }, 6000);
  }
+
+ //Event Json
+ const eventApI = "https://sergjcerro.github.io./lesson12/event.json";
+ fetch(eventApI)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log(jsObject);
+    });
