@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="images/belize.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favico.png">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -48,7 +49,7 @@
         <ul class="nav">
             <li><a href="#" onclick="Menu()">&#9776;</a></li>
             <li><a href="#weather">Weather</a></li>
-            <li><a href="#">Join the Chamber</a></li>
+            <li class="active"><a href="join.html">Log In /SignUp</a></li>
             <li><a href="#">Businesses</a></li>
             <li><a href="#">Sponsors</a></li>
             <li><a href="#">News & Events</a></li>
@@ -56,72 +57,137 @@
 
         </ul>
     </nav>
-    
-        <footer class="footer-distributed">
+    <main>
 
-            <div class="footer-left">
-                <img src="images/belizelogo.png" alt="belizelogo" width="300" height="300">
+        <section>
+            <div class="container">
+                <div class="user signinBx">
+                    <div class="imgBx"><img src="#" alt="" width="300" height="300" /></div>
+                    <div class="formBx">
+                        <form action="" onsubmit="return false;">
+                            <h2>Sign In</h2>
+                            <input type="text" name="" placeholder="Username" />
+                            <input type="password" name="" placeholder="Password" />
+                            <input type="submit" name="" value="Login" />
+                            <p class="signup">
+                                Don't have an account ?
+                                <a href="#" onclick="toggleForm();">Sign Up.</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form action="" onsubmit="return false;">
+                            <h2>Create an account</h2>
+                            <input type="text" name="first_name" placeholder="First name" required />
+                            <input type="text" name="last_name" placeholder="Last name" required />
+                            <label for="title">Title:</label>
+                            <select name="title" id="title">
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                            </select>
+                        <input type="email" name="Email" placeholder="Email Address" required />
+                        <input type="tel" name="phone" placeholder="Phone Number" />
+                        <input type="text" name="company_name" placeholder="Business name" required />
+                        <input type="text" name="company_address" placeholder="Business Address" />
+                        <input type="" name="company_address" placeholder="Description of Business" />
+                        <input type="text" name="company_site" placeholder="Business website" />
+                        <label for="title">Membership Level:</label>
+                            <select name="title" id="title">
+                                <option value="Non-Profit">Non-Profit $100</option>
+                                <option value="Bronze">Bronze $200</option>
+                                <option value="Silver">Silver $300</option>
+                                <option value="Gold">Gold $400</option>
+                                <option value="Diamond">Diamond $600</option>
+                                <option value="Netherite">Netherite $1000</option>
 
-
-                <p class="footer-links">
-                    <a href="index.html" class="link-1">Home</a>
-
-                    <a href="#">Join</a>
-
-                    <a href="#">Businesses</a>
-
-                    <a href="#">News and Events</a>
-
-                    <a href="#">About</a>
-
-                    <a href="#">Contact</a>
-                </p>
-
-                <p class="footer-company-name">Belize Chamber of Commerce © 2021</p>
+                            </select>
+                        <input type="password" name="" placeholder="Create Password" required />
+                        <input type="password" name="" placeholder="Confirm Password" required />
+                        <input type="submit" name="" value="Sign Up" />
+                        <p class="signup">
+                            Already have an account ?
+                            <a href="#" onclick="toggleForm();">Sign in.</a>
+                        </p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="images/professional-gesture-successful-collar-mixed.jpg" alt="" />
+                    </div>
+                </div>
             </div>
-
-            <div class="footer-center">
-
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>14 Douglas Jones</span> Belize City, Belize C.A</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+501-602-9041</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@bcc.com">support@bcc.com</a></p>
-                </div>
-
-            </div>
-
-            <div class="footer-right">
-
-                <p class="footer-company-about">
-                    <span>About the company</span>
-                    Making Dreams a Reality, One Step at a Time.
-                </p>
-
-                <div class="footer-icons">
-
-                    <a href="https://www.facebook.com/IACDeadshot/"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/SergioJCerrito1"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/sergio-cerritos-3920001aa/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/SergJCerro"><i class="fa fa-github"></i></a>
-
-                </div>
-
-            </div>
-
-        </footer>
+            <script>
+                const toggleForm = () => {
+                    const container = document.querySelector('.container');
+                    container.classList.toggle('active');
+                };
+            </script>
+        </section>
     </main>
 
-    <script src="js/script.js"></script>
-    <script src="js/weatherapi.js"></script>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="images/belizelogo.png" alt="belizelogo" width="300" height="300">
+
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="#">Join</a>
+
+                <a href="#">Businesses</a>
+
+                <a href="#">News and Events</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Belize Chamber of Commerce © 2021</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>14 Douglas Jones</span> Belize City, Belize C.A</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+501-602-9041</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@bcc.com">support@bcc.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>B.C.C</span>
+                Making Dreams a Reality, One Step at a Time.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/IACDeadshot/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/SergioJCerrito1"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sergio-cerritos-3920001aa/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/SergJCerro"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    </main>
 </body>
 
 </html>

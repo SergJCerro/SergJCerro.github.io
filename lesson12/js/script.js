@@ -71,4 +71,4 @@ window.onload= function () {
      document.getElementById("nam2").innerHTML = jsObject.chamber_news[2].name;
      document.getElementById('des2').innerHTML = jsObject.chamber_news[2].description;
     });
-   
+ 

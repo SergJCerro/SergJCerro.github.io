@@ -35,6 +35,11 @@ nav ul .active {
     background-color: lightseagreen;
     border-radius: 1.5em;
 }
+nav ul .activi{
+    background: aqua;
+    color: snow;
+    border-radius: 1.5em;
+}
 
 ul {
     list-style: none;
