@@ -59,4 +59,11 @@
   position: relative;
   width: 960px;
 }
+table{
+  max-width: 800px;
+}
+
+#fiveDay {
+  width: 800px;
+}
 }

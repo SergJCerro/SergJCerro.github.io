@@ -160,4 +160,9 @@ section .container.active .signinBx .imgBx {
   section .container .user .formBx {
     width: 100%;
   }
+  
+}
+.learn{
+  cursor: pointer;
+  background-color: aliceblue;
 }

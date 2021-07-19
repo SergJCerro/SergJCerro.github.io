@@ -534,3 +534,96 @@ h3, h4 {
         margin-left: 0;
     }
 }
+/*Weather*/
+
+#fiveDay {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    color: #05386b;
+  }
+  th{
+    padding: 5px;
+  }
+  
+  td {
+    border: 1px solid #000;
+  }
+  #forecastDay {
+    background-color: #041a4d;
+    color: #fafefd;
+  
+  }
+  table {
+    max-width: 300px;
+    
+  }
+  tbody img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+  }
+  /*Contactt*/
+  input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: lightblue;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: navy;
+}
+  .container1 {
+    z-index: -5;
+    border-radius: 5px;
+    background-color: #83a2f6;
+    padding: 10px;
+  }
+  
+  .column1 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column1,
+    input[type="submit"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

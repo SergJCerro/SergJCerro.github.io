@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belize Chamber of Commerce ">
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="Belize Chamber of Commerce " />
+    <meta name="author" content="Sergio Cerritos">
+    <meta name="generator" content="Power By Github and Created by Sergio Cerritos">
+    <link rel="shortcut icon" href="images/belize.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favico.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header>
+        <a href="/lesson12/index.html">
+            <picture>
+                <img src="images/belizelogo.png" alt="suns_logo_Home" width="300" height="300" />
+            </picture>
+        </a>
+        <div id="header_top">
+            <div id="social">
+                <a href="https://www.facebook.com" class="fa fa-facebook facebook"></a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li><a href="#" onclick="Menu()">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="join.html">Log In /SignUp</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="#">About BCC</a></li>
+
+        </ul>
+    </nav>
+    <script>
+          function Menu() {
+    document.getElementsByClassName("nav")[0].classList.toggle("responsive");
+  }
+    </script>
+    <main>
+        
+        <div class="container1">
+            <div style="text-align:center">
+              <h1>Contact Us</h1>
+              <p>Swing by or leave us a message:</p>
+            </div>
+            <div class="row1">
+              <div class="column1">
+                <div class="map-responsive">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.12291281641!2d-88.19115768607047!3d17.50164510410848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMwJzA1LjkiTiA4OMKwMTEnMjAuMyJX!5e0!3m2!1sen!2sbz!4v1617313545127!5m2!1sen!2sbz"
+                    width="400"
+                    height="500"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="column1">
+                <form >
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Your name.."
+                  />
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Your last name.."
+                  />
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="belize"><strong>Belize</strong></option>
+                    <option value="mexico">Mexico</option>
+                    <option value="guatemala">Guatemala</option>
+                  </select>
+                  <label for="directors">To Whom</label>
+                  <select name="Board of Directors " id="directors">
+                      <option value=""></option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="Write something.."
+                    style="height:170px"
+                  ></textarea>
+                  <input type="submit" value="Submit" onclick="myFunction()" />
+                  <script>
+                    function myFunction() {
+                      var greeting = "Thank You for Sending us a Message !";
+                      alert(greeting);
+                    }
+                  </script>
+                </form>
+      
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="images/belizelogo.png" alt="belizelogo" width="300" height="300">
+
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="join.html">Join</a>
+
+                <a href="directory.html">Directory</a>
+
+
+                <a href="#">About</a>
+
+                <a href="contactus.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Belize Chamber of Commerce © 2021</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>14 Douglas Jones</span> Belize City, Belize C.A</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+501-602-9041</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@bcc.com">support@bcc.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>B.C.C</span>
+                Making Dreams a Reality, One Step at a Time.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/IACDeadshot/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/SergioJCerrito1"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sergio-cerritos-3920001aa/"><i class="fa fa-linkedin"></i></a>
+                
+
+            </div>
+
+        </div>
+
+    </footer>
+    </main>
+   
+</body>
+
+</html>
