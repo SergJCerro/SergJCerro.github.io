@@ -107,7 +107,7 @@ header input[type=text], header .search-container button {
     padding: 14px;
 }
 td{
-    width:30%
+    width:30%;
 }
 header input[type=text] {
     border: 1px solid #ccc;
