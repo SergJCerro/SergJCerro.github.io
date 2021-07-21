@@ -68,11 +68,11 @@
                 <div class="user signinBx">
                     <div class="imgBx"><img src="images/belize-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg" alt="" width="300" height="300" /></div>
                     <div class="formBx">
-                        <form action="" onsubmit="return false;">
+                        <form action="#" onsubmit="return false;">
                             <h2>Sign In</h2>
-                            <input type="text" name="" placeholder="Username" required/>
-                            <input type="password" name="" placeholder="Password" required/>
-                            <input type="submit" name="" value="Login" />
+                            <input type="text" name="Username" placeholder="Username" required/>
+                            <input type="password" name="Password" placeholder="Password" required/>
+                            <input type="submit" name="Login" value="Login" />
                             <p class="signup">
                                 Don't have an account ?
                                 <a href="#" onclick="toggleForm();">Sign Up.</a>
@@ -87,7 +87,7 @@
                             <input type="text" name="first_name" placeholder="First name" required />
                             <input type="text" name="last_name" placeholder="Last name" required />
                             <label for="title">Title:</label>
-                            <select name="title" id="title">
+                            <select name="name_title" id="title">
                                 <option value="Mr.">Mr.</option>
                                 <option value="Mrs.">Mrs.</option>
                                 <option value="Ms.">Ms.</option>
@@ -96,7 +96,7 @@
                         <input type="tel" name="phone" placeholder="Phone Number" />
                         <input type="text" name="company_name" placeholder="Business name" required />
                         <input type="text" name="company_address" placeholder="Business Address" />
-                        <input type="" name="company_address" placeholder="Description of Business" />
+                        <input type="text" name="company_des" placeholder="Description of Business" />
                         <input type="text" name="company_site" placeholder="Business website" />
                         <label for="title">Membership Level:</label>
                             <select name="title" id="title">
@@ -106,9 +106,9 @@
                                 <option value="Diamond">Gold $1000</option>
                             </select>
                             <a href="#learn" class="learn"> Learn More about Pricing</a>
-                        <input type="password" name="" placeholder="Create Password" required />
-                        <input type="password" name="" placeholder="Confirm Password" required />
-                        <input type="submit" name="" value="Sign Up" />
+                        <input type="password" name="create_password" placeholder="Create Password" required />
+                        <input type="password" name="con_password" placeholder="Confirm Password" required />
+                        <input type="submit" name="signup" value="Sign Up" />
                         <p class="signup">
                             Already have an account ?
                             <a href="#" onclick="toggleForm();">Sign in.</a>
@@ -188,7 +188,7 @@
         </div>
 
     </footer>
-    </main>
+
 </body>
 
 </html>
