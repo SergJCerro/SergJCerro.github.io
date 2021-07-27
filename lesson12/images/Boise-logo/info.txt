@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: amita-regular
+font link: https://fonts.google.com/specimen/Amita
+font author: Eduardo Tunni
+font author site: http://www.tipo.net.ar/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Rediffusion
+icon designer link: /rediffusion
+        
+{"bg":"#E9F5E7","icon-gradient-0":"#5A5A2D","icon-gradient-1":"#0DE30D","font":"#0C3507","slogan":"#20491b"}
+      
